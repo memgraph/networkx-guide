@@ -33,4 +33,4 @@ Community Detection in NetworkX
 | Kernighan–Lin algorithm      | This algorithm partitions a network into two sets by iteratively swapping pairs of nodes to reduce the edge cut between the two sets. | NetworkX Reference Guide |
 
 
-In the following chapter, we covered the [Girvan–Newman algorithm](/algorithms/community-detection/girvan–newman.md).
+In the following chapter, we covered the [Girvan–Newman algorithm](/algorithms/community-detection/girvan-newman.md).

@@ -34,7 +34,7 @@ module.exports = {
           type: 'category',
           label: 'Community detection',
           items: ['algorithms/community-detection/community-detection',
-            'algorithms/community-detection/girvan–newman',],
+            'algorithms/community-detection/girvan-newman',],
         },
         'algorithms/components/weakly-connected-components',],
     },

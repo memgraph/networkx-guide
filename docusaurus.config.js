@@ -22,7 +22,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/memgraph/networkx-guide',
           label: 'GitHub',
           position: 'right',
         },
@@ -87,7 +87,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/memgraph/networkx-guide/edit/main/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

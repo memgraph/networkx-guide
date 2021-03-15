@@ -29,7 +29,14 @@ module.exports = {
             'algorithms/shortest-path/a-star-search',
             'algorithms/shortest-path/floyd-warshall',],
         },
-        'algorithms/link-analysis/pagerank',],
+        'algorithms/link-analysis/pagerank',
+        {
+          type: 'category',
+          label: 'Community detection',
+          items: ['algorithms/community-detection/community-detection',
+            'algorithms/community-detection/girvan–newman',],
+        },
+        'algorithms/components/weakly-connected-components',],
     },
   ],
 };

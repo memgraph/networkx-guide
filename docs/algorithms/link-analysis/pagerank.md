@@ -2,7 +2,6 @@
 id: pagerank
 title: PageRank algorithm
 sidebar_label: PageRank
-slug: algorithms/link-analysis/pagerank
 ---
 
 Typing terms in Google and searching them up yields a lot of results. But why are we getting the results in that order? The answer to that question is the PageRank algorithm. The PageRank algorithm is a way to measure the importance of a webpage by analyzing the quantity and quality of the links that point to it.
@@ -55,7 +54,9 @@ ENDFOR
 
 ## Usage in NetworkX
 
-`pagerank(G, alpha=0.85, personalization=None, max_iter=100, tol=1e-06, nstart=None, weight='weight', dangling=None)`
+```python
+pagerank(G, alpha=0.85, personalization=None, max_iter=100, tol=1e-06, nstart=None, weight='weight', dangling=None)
+```
 
 ### Method input
 
@@ -64,12 +65,14 @@ The second parameter, alpha, is the damping parameter for PageRank and the defau
 The fourth parameter, max_iter, is the Maximum number of iterations.
 The seventh parameter, weight, represents the edge attribute that should be used as the edge weight. If it’s not specified, the weight of all edges will be 1. 
 
-For all other parameters, check out the [NetworkX Reference Guide]().
+For all other parameters, check out the [NetworkX Reference Guide](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.link_analysis.pagerank_alg.pagerank.html#networkx.algorithms.link_analysis.pagerank_alg.pagerank).
 
 ### Method output
 
 The output of the method is a dictionary with nodes as keys and with PageRank as values.
-Example
+
+### Example
+
 Python’s NetworkX implements the PageRank algorithm as part of its Link Analysis algorithms. In the example below, we will showcase how to use the PageRank algorithm. We will calculate PageRank values on the graph from figure X.
 
 ```python

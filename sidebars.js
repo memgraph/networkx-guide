@@ -20,7 +20,16 @@ module.exports = {
     {
       type: 'category',
       label: 'Algorithms',
-      items: ['algorithms/algorithms',],
+      items: ['algorithms/algorithms',
+        {
+          type: 'category',
+          label: 'Shortest path',
+          items: ['algorithms/shortest-path/shortest-path',
+            'algorithms/shortest-path/dijkstra',
+            'algorithms/shortest-path/a-star-search',
+            'algorithms/shortest-path/floyd-warshall',],
+        },
+        'algorithms/link-analysis/pagerank',],
     },
   ],
 };

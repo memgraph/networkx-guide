@@ -2,7 +2,7 @@
 id: shortest-path
 title: Shortest path algorithms
 sidebar_label: Shortest path
-slug: algorithms/shortest-path
+slug: /algorithms/shortest-path
 ---
 
 When planning a road trip, we are trying to minimize our costs in many different areas - gas, time, overnight stays, traffic costs, etc. Calculating these costs can take a lot of effort and time, but what if there was a more elegant way that could solve the problem for you? 

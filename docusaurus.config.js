@@ -87,7 +87,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           editUrl:
-            'https://github.com/memgraph/networkx-guide/edit/main/website/',
+            'https://github.com/memgraph/networkx-guide/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

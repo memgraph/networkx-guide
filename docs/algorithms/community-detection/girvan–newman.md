@@ -4,7 +4,7 @@ title: Girvan-Newman algorithm
 sidebar_label: Girvan-Newman
 ---
 
-The Girvan-Newman algorithm for the detection and analysis of community structure relies on the iterative elimination of edges that have the highest number of shortest paths between nodes passing through them. By removing edges from the graph one-by-one, the network breaks down into smaller pieces, so-called communities. The algorithm was introduced by Michelle Girvan and Mark Newman.
+The **Girvan-Newman algorithm** for the detection and analysis of community structure relies on the *iterative elimination of edges that have the highest number of shortest paths between nodes passing through them*. By removing edges from the graph one-by-one, the network breaks down into smaller pieces, so-called communities. The algorithm was introduced by Michelle Girvan and Mark Newman.
 
 ## How does it work?
 
@@ -16,16 +16,24 @@ The Girvan-Newman algorithm can be divided into four main steps:
 3. Calculate the betweenness centrality for every remaining edge.
 4. Repeat steps 2-4 until there are no more edges left.
 
-In this example, you can see how a typical graph looks like when edges are assigned weights based on the number of shortest paths passing through them. To keep things simple, we only calculated the number of undirected shortest paths that pass through an edge. The edge between nodes A and B has a strength of 1 because we don’t count A->B and B->A as two different paths.
+![Graph](/img/algorithms/community-detection/girvan-newman-example-one.jpg)
 
-The Girvan-Newman algorithm would remove the edge between nodes C and D because it is the one with the highest strength. As you can see intuitively, this means that the edge is located between communities.
+In this example, you can see how a typical graph looks like when **edges are assigned weights based on the number of shortest paths passing through them**. To keep things simple, we only calculated the number of undirected shortest paths that pass through an edge. The edge between nodes **A** and **B** has a strength of 1 because we don’t count **A->B** and **B->A** as two different paths.
+
+![Graph](/img/algorithms/community-detection/girvan-newman-example-two.jpg)
+
+The Girvan-Newman algorithm would remove the edge between nodes **C** and **D** because it is the one with the highest strength. As you can see intuitively, this means that the edge is located between communities.
 After removing an edge, the betweenness centrality has to be recalculated for every remaining edge. In this example, we have come to the point where every edge has the same betweenness centrality.
 
 ## Betweenness centrality
 
-Betweenness centrality measures the extent to which a vertex or edge lies on paths between vertices. Vertices and edges with high betweenness may have considerable influence within a network by virtue of their control over information passing between others.
+**Betweenness centrality** measures the extent to which a vertex or edge lies on paths between vertices. Vertices and edges with high betweenness may have considerable influence within a network by virtue of their control over information passing between others.
 
 The calculation of betweenness centrality is not standardized and there are many ways to solve it. It is defined as the number of shortest paths in the graph that pass through the node or edge divided by the total number of shortest paths.
+
+![Betweenness](/img/algorithms/community-detection/betweenness-example.png)
+
+The image above shows an undirected graph colored based on the betweenness centrality of each vertex from least (red) to greatest (blue).
 
 ## Pseudocode
 
@@ -47,7 +55,9 @@ UNTIL number of edges in graph is 0
 
 ## Usage in NetworkX
 
-`girvan_newman(G, most_valuable_edge=None)`
+```python
+girvan_newman(G, most_valuable_edge=None)
+```
 
 ### Method input
 
@@ -56,7 +66,7 @@ The second parameter, `most_valuable_edge`, is a function that takes a graph as 
 
 ### Method output
 
-The output of the method is an iterator over tuples of sets of nodes in G. Each set of nodes represents a community and each tuple is a sequence of communities at a particular level (iteration) of the algorithm. 
+The output of the method is an iterator over tuples of sets of nodes in `G`. Each set of nodes represents a community and each tuple is a sequence of communities at a particular level (iteration) of the algorithm. 
 
 ### Example
 
@@ -92,3 +102,5 @@ The output is:
 ```
 
 The network has been divided into two distinct communities:
+
+![Graph](/img/algorithms/community-detection/girvan-newman-matplotlib.png)

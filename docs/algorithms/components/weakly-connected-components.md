@@ -9,6 +9,8 @@ How does it work?
 The Weakly Connected Components algorithm (WCC), also known as Union Find, searches for distinct sets of connected nodes in a graph. All nodes in such a set are reachable from any other node in the same set.
 While the Strongly Connected Components algorithm (SCC) requires nodes to be reachable in both directions, WCC only requires nodes to be reachable in one direction. Both algorithms are used for network structure analysis.
 
+![WCC example](/img/algorithms/components/wcc-example.jpg)
+
 For example, in the graph above, you can see three weakly connected components. Nodes from the subgraph {A, B, C} aren’t connected to any other nodes in the graph and therefore must be a separate component.
 
 ## Practical Applications
@@ -82,3 +84,5 @@ The output is:
 ```
 
 The network has two weakly connected components:
+
+![WCC matplotlib](/img/algorithms/components/wcc-matplotlib.png)

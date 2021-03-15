@@ -25,12 +25,12 @@ Agglomerative methods generally start with a network that contains only nodes of
 On the other hand, divisive methods rely on the process of removing edges from the original graph iteratively. Stronger edges are removed before weaker ones. At every step, the edge-weight calculation is repeated, since the weight of the remaining edges changes after an edge is removed. After a certain number of steps, we get clusters of densely connected nodes, a.k.a. communities.
 Community Detection in NetworkX
 
-| Girvan–Newman algorithm      | The Girvan–Newman algorithm detects communities by progressively removing edges from the original network.                            | NetworkX Reference Guide |
+| Girvan-Newman algorithm      | The Girvan-Newman algorithm detects communities by progressively removing edges from the original network.                            | NetworkX Reference Guide |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
 | Fluid Communities algorithm  | The algorithm is based on the simple idea of fluids interacting in an environment, expanding and pushing each other.                  | NetworkX Reference Guide |
 | Label Propagation algorithm  | Label propagation is a semi-supervised machine learning algorithm that assigns labels to previously unlabeled data points.            | NetworkX Reference Guide |
 | Clique Percolation algorithm | The algorithm finds k-clique communities in a graph using the percolation method.                                                     | NetworkX Reference Guide |
-| Kernighan–Lin algorithm      | This algorithm partitions a network into two sets by iteratively swapping pairs of nodes to reduce the edge cut between the two sets. | NetworkX Reference Guide |
+| Kernighan-Lin algorithm      | This algorithm partitions a network into two sets by iteratively swapping pairs of nodes to reduce the edge cut between the two sets. | NetworkX Reference Guide |
 
 
-In the following chapter, we covered the [Girvan–Newman algorithm](/algorithms/community-detection/girvan-newman.md).
+In the following chapter, we covered the [Girvan-Newman algorithm](/algorithms/community-detection/girvan-newman.md).

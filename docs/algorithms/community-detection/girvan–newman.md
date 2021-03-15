@@ -1,7 +1,7 @@
 ---
-id: girvan–newman
-title: Girvan–Newman algorithm
-sidebar_label: Girvan–Newman
+id: girvan-newman
+title: Girvan-Newman algorithm
+sidebar_label: Girvan-Newman
 ---
 
 The Girvan-Newman algorithm for the detection and analysis of community structure relies on the iterative elimination of edges that have the highest number of shortest paths between nodes passing through them. By removing edges from the graph one-by-one, the network breaks down into smaller pieces, so-called communities. The algorithm was introduced by Michelle Girvan and Mark Newman.
@@ -14,7 +14,7 @@ The Girvan-Newman algorithm can be divided into four main steps:
 1. For every edge in a graph, calculate the edge betweenness centrality.
 2. Remove the edge with the highest betweenness centrality.
 3. Calculate the betweenness centrality for every remaining edge.
-4. Repeat steps 2–4 until there are no more edges left.
+4. Repeat steps 2-4 until there are no more edges left.
 
 In this example, you can see how a typical graph looks like when edges are assigned weights based on the number of shortest paths passing through them. To keep things simple, we only calculated the number of undirected shortest paths that pass through an edge. The edge between nodes A and B has a strength of 1 because we don’t count A->B and B->A as two different paths.
 

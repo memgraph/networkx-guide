@@ -13,6 +13,7 @@ Pathfinding algorithms are one of the classical graph problems and have been res
 
 Starting from the source node, the algorithm looks up the weights on the (out-)going (in weighted graphs) edges. It chooses the edge which, summed to the previous total sum, gives the lowest result. The algorithm runs through every node up until the destination point. Results are a path and the total sum of the shortest path.
 
+![Shortest path example](/img/algorithms/shortest-path/shortest-path-example.jpg)
 
 ## Practical applications
 

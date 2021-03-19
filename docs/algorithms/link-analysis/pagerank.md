@@ -6,13 +6,18 @@ sidebar_label: PageRank
 
 Typing terms in Google and searching them up yields a lot of results. But why are we getting the results in that order? The answer to that question is the PageRank algorithm. The PageRank algorithm is a way to measure the importance of a webpage by analyzing the quantity and quality of the links that point to it.
 
+![PageRank-example-1](/img/algorithms/link-analysis/pagerank-example-1.jpg)
+
 ## How does it work?
 
 Google interprets a link from page A to page B as a vote from page A to page B.  All incoming links can be interpreted as votes. Looking at Figure X, we can say that then, the yellow node is more important than the red node.
 
-But, it also takes into consideration the “importance” of the page that is “giving” out the vote. If the page that’s casting a vote is more important, the links are worth more and it will help rank up the other pages. Page’s importance is equal to the sum of the votes of its incoming links.
+![PageRank-example-2](/img/algorithms/link-analysis/pagerank-example-2.jpg)
 
-Mathematically, PageRank (PR) is defined as
+But, it also takes into consideration the “importance” of the page that is “giving” out the vote. If the page that’s casting a vote is more important, the links are worth more and it will help rank up the other pages. Page’s importance is equal to the sum of the votes of its incoming links.
+![PageRank-example-3](/img/algorithms/link-analysis/pagerank-example-3.jpg)
+
+Mathematically, **PageRank** (PR) is defined as:
 
 PR(A) = (1 - d) + d i=1nPR(Ti)C(Ti)
 
@@ -98,3 +103,5 @@ The output is:
 ```
 Page rank values: {'A': 0.408074514346756, 'B': 0.07967426232810562, 'C': 0.13704946318948708, 'D': 0.13704946318948708, 'E': 0.021428571428571432, 'F': 0.07967426232810562, 'G': 0.13704946318948708}
 ```
+
+![PageRank example](/img/algorithms/link-analysis/pagerank-matplotlib.png)

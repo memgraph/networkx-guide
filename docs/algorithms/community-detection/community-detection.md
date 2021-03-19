@@ -9,7 +9,7 @@ While humans are very good at detecting distinct or repetitive patterns among a 
 
 M. Girvan and M. E. J. Newman have proposed one of the most widely adopted community detection algorithms. According to them, groups of nodes in a network are tightly connected within communities and loosely connected between communities.
 
-![Graph](/img/algorithms/community-detection/community-detection-example.jpg)
+![Community-detection-example](/img/algorithms/community-detection/community-detection-example.jpg)
 
 ## Practical applications
 

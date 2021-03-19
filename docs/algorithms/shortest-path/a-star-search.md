@@ -111,4 +111,6 @@ Path: [(0, 0), (0, 1), (0, 2), (1, 2), (2, 2)]
 Path length: 6
 ```
 
+![Astar matplotlib](/img/algorithms/shortest-path/astar-matplotlib.png)
+
 The first output represents the shortest path from point (0,0) to point (2,2). The second output is the length of the shortest path.

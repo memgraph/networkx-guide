@@ -16,11 +16,11 @@ The Girvan-Newman algorithm can be divided into four main steps:
 3. Calculate the betweenness centrality for every remaining edge.
 4. Repeat steps 2-4 until there are no more edges left.
 
-![Graph](/img/algorithms/community-detection/girvan-newman-example-one.jpg)
+![Girvan-newman-example-1](/img/algorithms/community-detection/girvan-newman-example-one.jpg)
 
 In this example, you can see how a typical graph looks like when **edges are assigned weights based on the number of shortest paths passing through them**. To keep things simple, we only calculated the number of undirected shortest paths that pass through an edge. The edge between nodes **A** and **B** has a strength of 1 because we don’t count **A->B** and **B->A** as two different paths.
 
-![Graph](/img/algorithms/community-detection/girvan-newman-example-two.jpg)
+![Girvan-newman-example-2](/img/algorithms/community-detection/girvan-newman-example-two.jpg)
 
 The Girvan-Newman algorithm would remove the edge between nodes **C** and **D** because it is the one with the highest strength. As you can see intuitively, this means that the edge is located between communities.
 After removing an edge, the betweenness centrality has to be recalculated for every remaining edge. In this example, we have come to the point where every edge has the same betweenness centrality.
@@ -31,7 +31,7 @@ After removing an edge, the betweenness centrality has to be recalculated for ev
 
 The calculation of betweenness centrality is not standardized and there are many ways to solve it. It is defined as the number of shortest paths in the graph that pass through the node or edge divided by the total number of shortest paths.
 
-![Betweenness](/img/algorithms/community-detection/betweenness-example.png)
+![Betweenness-example](/img/algorithms/community-detection/betweenness-example.png)
 
 The image above shows an undirected graph colored based on the betweenness centrality of each vertex from least (red) to greatest (blue).
 

@@ -7,13 +7,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #FB6E00;
-  --ifm-color-primary-dark: #E25500;
-  --ifm-color-primary-darker: #C83B00;
-  --ifm-color-primary-darkest: #AF2200;
-  --ifm-color-primary-light: #FF881A;
-  --ifm-color-primary-lighter: #FFA133;
-  --ifm-color-primary-lightest: #FFBB4D;
+  --ifm-color-primary: #fb6e00;
+  --ifm-color-primary-dark: #e25500;
+  --ifm-color-primary-darker: #c83b00;
+  --ifm-color-primary-darkest: #af2200;
+  --ifm-color-primary-light: #ff881a;
+  --ifm-color-primary-lighter: #ffa133;
+  --ifm-color-primary-lightest: #ffbb4d;
   --ifm-code-font-size: 95%;
 }
 
@@ -24,6 +24,16 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-img[alt=Betweenness] {
+img[alt="Betweenness-example"],
+img[alt="PageRank-example-3"] {
   width: 50%;
+}
+
+img[alt="Community-detection-example"],
+img[alt="Girvan-newman-example-1"],
+img[alt="Girvan-newman-example-2"],
+img[alt="PageRank-example-1"],
+img[alt="PageRank-example-2"],
+img[alt="WCC-example"] {
+  width: 75%;
 }

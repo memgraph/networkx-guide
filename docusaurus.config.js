@@ -8,6 +8,12 @@ module.exports = {
   favicon: 'img/networkx-logo-small.png',
   organizationName: 'memgraph',
   projectName: 'networkx-guide',
+  scripts: [
+    {
+      src: `https://docs.memgraph.com/js/load-analytics.js`,
+      //src: `http://localhost:3000/js/load-analytics.js`,
+    },
+  ],
   themeConfig: {
     navbar: {
       title: 'NetworkX Guide',
@@ -94,5 +100,9 @@ module.exports = {
         },
       },
     ],
+  ],
+  clientModules: [
+    require.resolve('./src/components/SegmentCall.js'),
+    //require.resolve('./src/components/HotJarCall.js'),
   ],
 };

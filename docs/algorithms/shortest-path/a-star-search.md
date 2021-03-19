@@ -4,7 +4,10 @@ title: A* search algorithm
 sidebar_label: A* search
 ---
 
-A* algorithm is a graph traversal and path search algorithm often used in many fields of computer science. Starting from the starting node, it aims to find the path to the target node having the smallest cost. 
+A\* algorithm is a graph traversal and path search algorithm often used in many fields of computer science. Starting from the starting node, it aims to find the path to the target node having the smallest cost.
+
+A\* search algorithm was made as a part of the Shakey project. The goal of the project was to build a mobile robot that could plan its own action. It yielded in the making of Shakey the Robot, the first general-purpose robot made in 1966. A* search algorithm was developed to help Shakey solve the pathfinding problems so it could move around.
+
 
 ## How does it work?
 
@@ -14,21 +17,24 @@ A* search algorithm uses heuristics to determine the path it will take. The heur
 
 ## The difference from other shortest path algorithms
 
-Unlike other traversal techniques, A* search algorithm has “brains”. It is a really smart algorithm that uses heuristic methods to guide itself. A* search algorithm is more efficient as its use of heuristics allows the algorithm to make a better choice about what path to take next. 
+The difference from other shortest path algorithms
+Unlike other traversal techniques, A\* search algorithm has “brains”. It is a really smart algorithm that uses heuristic methods to guide itself. A\* search algorithm is more efficient as its use of heuristics allows the algorithm to make a better choice about what path to take next. 
 
-While Dijkstra’s algorithm will always find the shortest path between the starting vertex and every other vertex in the graph, A* search algorithm will find the shortest path between the starting vertex and target vertex.
+While Dijkstra’s algorithm will always find the shortest path between the starting vertex and every other vertex in the graph, A\* search algorithm will find the shortest path between the starting vertex and target vertex.  In a graph with a small number of nodes, Dijkstra’s algorithm will suffice. However, in a real-life situation, we are dealing with the problem of an enormous number of combinations. For that, we need to use a “guided” algorithm that can decide the optimal route quickly and accurately. A\* search algorithm only performs steps if it seems promising and reasonable, unlike other shortest path algorithms. It runs toward the goal and doesn’t consider any non-optimal steps if it doesn’t have to consider them. 
 
-A* search algorithm is often used in pathfinding problems in video games, for finding the shortest path between a single pair of locations. It also finds use in parsing problems in Natural Language Processing (NPL).
+A\* search algorithm is very useful for artificially intelligent systems such as machine learning and game development where characters navigate complex terrains and obstacles to reach players.
+
 
 ## Pseudocode
 
 Before starting with the pseudocode, we need to explain the node structure. Each node has three attributes f, g, and h. Those attributes are parameters of the following equation:
 
-f(n) = g(n) + h(n)
+`f(n) = g(n) + h(n)`
+
 Where: 
-f is cost of the transversal
-g is the actual cost of transversal from the starting node
-h is the estimate cost of transversal to the target node 
+* f is cost of the transversal
+* g is the actual cost of transversal from the starting node
+* h is the estimate cost of transversal to the target node 
  
 ```
 INIT LIST openList
@@ -79,7 +85,7 @@ The output of the method is a list of nodes.
 
 ### Example
 
-A* search algorithm is implemented in Python’s NetworkX library. Using A* search algorithm in Python allows us to use custom methods and function as heuristics. In the following example, we designed the distance heuristic which calculates geometrical distances between the points. 
+Using A\* search algorithm in Python allows us to use custom methods and function as heuristics. In the following example, we designed the distance heuristic which calculates geometrical distances between the points. 
 
 ```python
 import networkx as nx

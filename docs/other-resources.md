@@ -1,7 +1,7 @@
 ---
-id: resources
-title: NetworkX Resources
-sidebar_label: NetworkX Resources
+id: other-resources
+title: Other useful resources
+sidebar_label: Other resources
 ---
 
 | Resource    | Description |

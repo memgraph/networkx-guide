@@ -44,6 +44,6 @@ module.exports = {
         },
         'algorithms/components/weakly-connected-components',],
     },
-    'resources',
+    'other-resources',
   ],
 };

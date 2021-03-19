@@ -15,9 +15,9 @@ For example, in the graph above, you can see three weakly connected components. 
 
 ## Practical Applications
 
-The Weakly Connected Component algorithm is mostly used for graph pre-processing. Many graph algorithms require networks to be fully connected without distinct components. Union find can be used to find and potentially eliminate such components.
-WCC can be used for basic community detection use cases where distinct disconnected groups are expected.
-Some social networks can utilize weakly connected components for recommendation generating purposes.
+* The Weakly Connected Component algorithm is mostly used for graph pre-processing. Many graph algorithms require networks to be fully connected without distinct components. Union find can be used to find and potentially eliminate such components.
+* WCC can be used for basic community detection use cases where distinct disconnected groups are expected.
+* Some social networks can utilize weakly connected components for recommendation generating purposes.
 
 ## Pseudocode
 

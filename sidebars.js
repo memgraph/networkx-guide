@@ -10,12 +10,18 @@ module.exports = {
     {
       type: 'category',
       label: 'Visualizing graphs',
-      items: ['visualization/visualization'],
+      items: ['visualization/visualization',
+        'visualization/basics'],
     },
     {
       type: 'category',
       label: 'Functions',
-      items: ['functions/functions',],
+      items: ['functions/functions',
+        {
+          type: 'category',
+          label: 'Attributes',
+          items: ['functions/attributes/basics',],
+        },],
     },
     {
       type: 'category',

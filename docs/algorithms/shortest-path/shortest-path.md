@@ -17,9 +17,9 @@ Starting from the source node, the algorithm looks up the weights on the (out-)g
 
 ## Practical applications
 
-Most commonly used to find directions and paths between physical locations.
-* In networking or telecommunications, where they seek the shortest path with minimum delay.
-* In social networks, trying to find the shortest path between users and celebrities.
+* We use Dijkstra’s algorithm in digital mapping services in Google Maps. Each time we look for directions, we get the time to travel alongside the optimal route. Both of that information are results of Dijkstra’s algorithm. 
+* While using social networks, you might see suggestions such as ‘People you might know’ or ‘People your friends follow’. If the social graph is really small, you can use Dijkstra’s algorithm to find the shortest path between users measuring connections among them.
+* In telecommunications, each line has a bandwidth, a measure that tells us how much data can go through the line. We can use Dijkstra’s algorithm to determine the shortest paths between sending and receiving points in the network when transmitting data, for example sending an email to all of your friends.
 
 ## Shortest path algorithms in NetworkX
 

@@ -11,7 +11,8 @@ The algorithm was designed by Dr Edsger Dijkstra, a Dutch computer scientist, in
 ## How does it work?
 
 Dijkstra’s algorithm starts at the chosen node (also known as the source node). The algorithm keeps track of the currently known shortest path from each node to the source node. It updates the path values if it finds a shorter path. When the algorithm finds the shortest path between the source node and another node, that node is marked as “visited” and added to the path. This process continues until all of the nodes have been added to the path. The result of the algorithm is a path that connects the source node to all other nodes in the graph following the shortest path to each node.  
-The difference from the other shortest path algorithms
+
+## The difference from the other shortest path algorithms
 Dijkstra’s algorithm can only work on graphs that have positive values on the edges. The result of the algorithm is a structure called the minimum spanning tree - a tree-like structure that connects the source node to every other node in the graph following the shortest path to each node.
 
 ## Pseudocode

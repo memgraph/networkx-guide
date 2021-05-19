@@ -6,6 +6,9 @@ sidebar_label: Floyd-Warshall
 
 Floyd-Warshall algorithm is an algorithm for finding the shortest path between all the pairs of vertices in a weighted graph. The result of the algorithm is a list of lengths of shortest paths between all pairs of vertices. 
 
+The algorithm was first designed as an example for dynamic programming by Robert Floyd in 1962. The same year, Stephen Warshall published essentially the same algorithm, but as a graph example. As the algorithms were essentially the same, the algorithm got named after both authors.
+
+
 ## How does it work?
 
 Floyd-Warshall algorithm creates a series of matrices with dimension n x n, where n is the number of nodes in the graph. Elements of the matrices are filled with distances from node i to node j. If there is no path between the two nodes, the element is put as infinity. 
@@ -59,7 +62,27 @@ The output of the method is a dictionary keyed by source and target, of shortest
 
 In Python’s library, NetworkX implements the Floyd-Warshall algorithm as part of the shortest path algorithms. Insert the graph from Figure 1 in NetworkX (see Appendix A) before you start the example program.
 
-```python
+```python=
+import networkx as nx
+
+edges = [(1,2, {'weight':4}),
+        (1,3,{'weight':2}),
+        (2,3,{'weight':1}),
+        (2,4, {'weight':5}),
+        (3,4, {'weight':8}),
+        (3,5, {'weight':10}),
+        (4,5,{'weight':2}),
+        (4,6,{'weight':8}),
+        (5,6,{'weight':5})]
+edge_labels = {(1,2):4, (1,3):2, (2,3):1, (2,4):5, (3,4):8, (3,5):10, (4,5):2, (4,6):8, (5,6):5}
+   
+        
+G = nx.Graph()
+for i in range(1,7):
+    G.add_node(i)
+G.add_edges_from(edges)
+
+pos = nx.planar_layout(G)
 nx.draw(G, pos, with_labels = True)
 nx.draw_networkx_edge_labels(G, pos,edge_labels=edge_labels)
 

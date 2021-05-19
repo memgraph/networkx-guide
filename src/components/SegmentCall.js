@@ -12,7 +12,12 @@ export default (function () {
                 title: document.title,
                 path: location.pathname
             });
+
             //hotjar.initialize(1822641, 6);
+
+            if (window.ldfdr.pageview && typeof window.ldfdr.pageview === 'function') {
+                window.ldfdr.pageview();
+            }
         },
     };
 })();

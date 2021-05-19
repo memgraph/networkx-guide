@@ -16,3 +16,15 @@
   a.appendChild(r);
 }(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 */
+
+!function (ss) {
+  window.ldfdr = function () { (ldfdr._q = ldfdr._q || []).push([].slice.call(arguments).concat(ss)); };
+  (function (d, s) {
+    fs = d.getElementsByTagName(s)[0];
+    function ce(src) {
+      var cs = d.createElement(s);
+      cs.src = src;
+      setTimeout(function () { fs.parentNode.insertBefore(cs, fs) }, 1);
+    }; ce('https://sc.lfeeder.com/lftracker_v1_' + ss + '.js');
+  })(document, 'script');
+}('Xbp1oaEBk1L8EdVj');

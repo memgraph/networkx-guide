@@ -15,6 +15,13 @@ module.exports = {
     },
   ],
   themeConfig: {
+    metadata: [
+      {
+        name: "facebook-domain-verification",
+        content:
+          "qsp6bwsoed1tgwrnqps64c0fm4rxij",
+      },
+    ],
     navbar: {
       title: 'NetworkX Guide',
       logo: {

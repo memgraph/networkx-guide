@@ -120,3 +120,6 @@ Path length: 6
 ![Astar matplotlib](/img/algorithms/shortest-path/astar-matplotlib.png)
 
 The first output represents the shortest path from point (0,0) to point (2,2). The second output is the length of the shortest path.
+
+
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bastar&utm_content=findfasteralgorithms).

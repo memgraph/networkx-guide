@@ -105,3 +105,5 @@ Page rank values: {'A': 0.408074514346756, 'B': 0.07967426232810562, 'C': 0.1370
 ```
 
 ![PageRank example](/img/algorithms/link-analysis/pagerank-matplotlib.png)
+
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bweaklyconnectedcomponents&utm_content=findfasteralgorithms).

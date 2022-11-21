@@ -37,3 +37,6 @@ So far, we have covered these algorithms:
 * [Dijkstra’s algorithm](/algorithms/shortest-path/dijkstra),
 * [A* search algorithm](/algorithms/shortest-path/a-star-search),
 * [Floyd-Warshall algorithm](/algorithms/shortest-path/floyd-warshall).
+
+
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bshortestpath&utm_content=findfasteralgorithms).

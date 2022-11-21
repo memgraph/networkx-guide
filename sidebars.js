@@ -4,8 +4,8 @@ module.exports = {
     {
       type: 'category',
       label: 'Getting started',
-      items: ['getting-started/getting-started',
-        'getting-started/installation'],
+      items: ['getting-started/installation', 'getting-started/getting-started'
+      ],
     },
     {
       type: 'category',

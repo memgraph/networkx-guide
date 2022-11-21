@@ -102,3 +102,6 @@ The output is:
  5: {1: 10, 2: 7, 3: 8, 4: 2, 5: 0, 6: 5},
  6: {1: 15, 2: 12, 3: 13, 4: 7, 5: 5, 6: 0}}
 ```
+
+
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bfloydwarshall&utm_content=findfasteralgorithms).

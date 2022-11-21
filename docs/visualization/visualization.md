@@ -72,3 +72,6 @@ Take a look at some of the most common questions when it comes to drawing graphs
 3. [How to change the color and width of edges in NetworkX graphs according to edge attributes?](/visualization/basics#3-how-to-change-the-color-and-width-of-edges-in-networkx-graphs-according-to-edge-attributes)
 4. [How to color nodes in NetworkX graphs?](/visualization/basics#4-how-to-color-nodes-in-networkx-graphs)
 5. [How to color nodes in NetworkX graphs according to their attributes?](/visualization/basics#5-how-to-color-nodes-in-networkx-graphs-according-to-their-attributes)
+
+
+See how to visualise your graphs easy [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=visualization%2Boverview&utm_content=visualizeiteasy).

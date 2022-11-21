@@ -104,3 +104,5 @@ The output is:
 The network has been divided into two distinct communities:
 
 ![Graph](/img/algorithms/community-detection/girvan-newman-matplotlib.png)
+
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bgirvannewman&utm_content=findfasteralgorithms).

@@ -48,3 +48,5 @@ If you want to update your current version of NetworkX then run:
 ```
 conda update networkx
 ```
+
+To learn the basics of the most important concepts in NetworkX, head over to the [**Getting started guide**](/getting-started).

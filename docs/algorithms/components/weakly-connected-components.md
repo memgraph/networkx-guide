@@ -86,3 +86,5 @@ The output is:
 The network has two weakly connected components:
 
 ![WCC matplotlib](/img/algorithms/components/wcc-matplotlib.png)
+
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bweaklyconnectedcomponents&utm_content=findfasteralgorithms).

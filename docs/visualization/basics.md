@@ -126,3 +126,6 @@ plt.show()
 The output is:
 
 ![Matplotlib figure](/img/visualization/visualization-basics-matplotlib-5.png)
+
+
+See how to visualise your graphs easy [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=visualization%2Bbasics&utm_content=visualizeiteasy).

@@ -106,3 +106,6 @@ All paths from 1: {1: [1], 2: [1, 3, 2], 3: [1, 3], 4: [1, 3, 2, 4], 5: [1, 3, 2
 Shortest path from 1 to 6: [1, 3, 2, 4, 5, 6] 
 Length of the shortest path: 15
 ```
+
+
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bdijkstra&utm_content=findfasteralgorithms).

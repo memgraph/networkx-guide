@@ -32,6 +32,6 @@ We need to set `data=True` to access the attributes.
 
 ```python
 for n1, n2 in list(G.edges(data=True)):
-    print G.node[n1]['name'], G.node[n2]['name']
-    print G.node[n1]['year_of_birth'], G.node[n2]['year_of_birth']
+    print(G.node[n1]['name'], G.node[n2]['name'])
+    print(G.node[n1]['year_of_birth'], G.node[n2]['year_of_birth'])
 ```

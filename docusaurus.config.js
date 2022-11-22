@@ -35,9 +35,10 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/memgraph/networkx-guide',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/memgraph/memgraph",
+          className: 'header-github-link',
+          position: "right",
+          'aria-label': 'GitHub repository'
         },
       ],
     },
@@ -48,12 +49,45 @@ module.exports = {
           title: 'Guide',
           items: [
             {
-              label: 'Installation',
+              label: 'Getting started',
               to: '/',
             },
             {
-              label: 'Getting started',
-              to: '/',
+              label: 'Visualizing graphs',
+              to: '/visualization',
+            },
+            {
+              label: 'Functions',
+              to: '/functions',
+            },
+            {
+              label: 'Algorithms',
+              to: '/algorithms',
+            },
+            {
+              label: 'Other resources',
+              to: '/other-resources',
+            },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            {
+              label: 'NetworkX Project',
+              href: 'https://networkx.org/',
+            },
+            {
+              label: 'NetworkX Source Code',
+              href: 'https://github.com/networkx/networkx',
+            },
+            {
+              label: 'NetworkX Documentation',
+              href: 'https://networkx.org/documentation/stable/index.html',
+            },
+            {
+              label: 'NetworkX Resources',
+              href: 'https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=footer&utm_content=textlinkresources',
             },
           ],
         },
@@ -63,23 +97,6 @@ module.exports = {
             {
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/networkx',
-            },
-          ],
-        },
-        {
-          title: 'Official NetworkX Resources',
-          items: [
-            {
-              label: 'NetworkX Project',
-              href: 'https://networkx.org/',
-            },
-            {
-              label: 'Source Code',
-              href: 'https://github.com/networkx/networkx',
-            },
-            {
-              label: 'Documentation',
-              href: 'https://networkx.org/documentation/stable/index.html',
             },
           ],
         },

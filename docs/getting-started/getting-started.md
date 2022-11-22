@@ -35,7 +35,7 @@ NetworkX graph objects can be created in three ways:
 - by [**reading**](#reading-graphs) from different formats,
 - by [**adding nodes and edges**](#adding-nodes-and-edges) explicitly.
 
-It is also possible to [remove nodes and edges](#removing-nodes-and-edges-from-the-graph) from your graph.
+It is also possible to [**remove nodes and edges**](#removing-nodes-and-edges-from-the-graph) from your graph.
 
 ### Graph generators
 
@@ -62,6 +62,9 @@ There are many types of graph generators inside NetworkX. They create predefined
 Let's generate and draw Zachary’s Karate Club graph with the following Python code:
 
 ```python
+import networkx as nx
+import matplotlib.pyplot as plt
+
 generated_graph = nx.karate_club_graph()
 pos = nx.spring_layout(generated_graph, scale=0.5)
 nx.draw(generated_graph, pos)
@@ -75,7 +78,7 @@ plt.show()
 
   The output of the previous Python code looks like this:
 
-![](../../static/img/getting-started/karate-club-dataset.png)
+![karate-club-dataset](../../static/img/getting-started/karate-club-dataset.png)
 
   </TabItem>
 
@@ -118,6 +121,10 @@ source,target
 Let's import the `graph.csv` file and draw the graph:
 
 ```python
+import networkx as nx
+import matplotlib.pyplot as plt
+import pandas as pd
+
 graph_type = nx.Graph()
 df = pd.read_csv('graph.csv')
 G = nx.from_pandas_edgelist(df, create_using=graph_type)
@@ -132,7 +139,7 @@ plt.show()
 
   The output of the previous Python code looks like this:
 
-![](../../static/img/getting-started/draw-csv.png)
+![draw-csv](../../static/img/getting-started/draw-csv.png)
 
   </TabItem>
 
@@ -214,7 +221,7 @@ plt.show()
 
   The output of the previous Python code looks like this:
 
-![](../../static/img/getting-started/kevin-bacon.png)
+![kevin-bacon](../../static/img/getting-started/kevin-bacon.png)
 
   </TabItem>
 
@@ -290,21 +297,113 @@ Notice how when the node `1` was removed, all edges incident with the removed no
 
 
 ## Graph examination
-
-To check out the number of nodes or edges, use the `number_of_nodes()` and `number_of_edges()` methods respectively:
+ 
+Let's define a simple graph `G`.
 
 ```python
-print(G.number_of_nodes())
-print(G.number_of_edges())
+import networkx as nx
+
+g = nx.Graph()
+g.add_nodes_from([1, 2, 3, 4, 5, 6])
+g.add_edges_from([(1, 2), (2, 3), (3, 4), (3, 5), (4, 5), (4, 6), (5, 6)])
 ```
 
-To list out the actual edges and nodes in the graph:
+To list the nodes and edges in the graph use the following code:
+
+<Tabs
+  groupId="listing_nodes_and_edges"
+  defaultValue="code"
+  values={[
+    {label: 'Python code', value: 'code'},
+    {label: 'Output', value: 'output'},
+  ]
+}>
+  <TabItem value="code"> 
 
 ```python
 print(G.nodes)
 print(G.edges)
 ```
+  </TabItem>
 
 
+  <TabItem value="output">
+
+  The output of the previous Python code looks like this:
+
+```python
+[1, 2, 3, 4, 5, 6]
+[(1, 2), (2, 3), (3, 4), (3, 5), (4, 5), (4, 6), (5, 6)]
+```
+  </TabItem>
+
+</Tabs>
+
+
+To check out its number of nodes or edges, use the `number_of_nodes()` and `number_of_edges()` methods.
+
+<Tabs
+  groupId="listing_number"
+  defaultValue="code"
+  values={[
+    {label: 'Python code', value: 'code'},
+    {label: 'Output', value: 'output'},
+  ]
+}>
+  <TabItem value="code"> 
+
+```python
+print(G.number_of_nodes())
+print(G.number_of_edges())
+```
+  </TabItem>
+
+
+  <TabItem value="output">
+
+  The output of the previous Python code looks like this:
+
+```python
+6
+7
+```
+  </TabItem>
+
+</Tabs>
+
+To check degrees of a set of nodes, that is, with how many edges those nodes are incident with, use `G.degree()` method.
+
+<Tabs
+  groupId="degree"
+  defaultValue="code"
+  values={[
+    {label: 'Python code', value: 'code'},
+    {label: 'Output', value: 'output'},
+  ]
+}>
+  <TabItem value="code"> 
+
+```python
+print(G.degree([4, 5]))
+```
+  </TabItem>
+
+
+  <TabItem value="output">
+
+  The output of the previous Python code looks like this:
+
+```python
+[(4, 3), (5, 3)]
+```
+  </TabItem>
+
+</Tabs>
+
+
+
+## Where to next?
+
+There are many other [**learning resources**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=getting%2Bstarted&utm_content=learningresources), such as courses, whitepapers and blog posts. With the help of these valuable resources, you can learn more about the importance of graph analytics and which tools are out there to help you.
 
 

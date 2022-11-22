@@ -4,7 +4,7 @@ title: Attribute basics
 sidebar_label: Attribute basics
 ---
 
-## 1. How to store and access node attributes using NetworkX in Python?
+## How to store and access node attributes using NetworkX in Python?
 
 You can add attributes when adding the nodes to the graph:
 
@@ -25,7 +25,7 @@ G.node['Person']['name']
 G.node['Person']['year_of_birth']
 ```
 
-## 2. How to access and change attributes of connected nodes?
+## How to access and change attributes of connected nodes?
 
 We can use the `G.edges()` function to get all the edges of a graph and iterate over them.
 We need to set `data=True` to access the attributes.

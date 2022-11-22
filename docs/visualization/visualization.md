@@ -4,74 +4,26 @@ title: Visualization overview
 sidebar_label: Visualization overview
 slug: /visualization
 ---
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
-Even though the NetworkX package isn't primarily a drawing tool, some functionalities come builtin.  
-Basic drawing with capabilities with **Matplotlib** and the open-source **Graphviz** software package are included.
+Even though the NetworkX package isn't primarily a drawing tool, basic drawing with capabilities with **Matplotlib** and the open-source **Graphviz** software package are included.
 
-Here is an example of how to draw a simple graph:
+There are many useful methods for drawing graph in NetworkX, and you are going to learn basics of:
+- [**Draw methods**](/visualization/basics#draw-methods)
+- [**Layouts**](/visualization/basics#layouts)
+- [**Positions**](/visualization/basics#positions)
+- [**Graph styling**](/visualization/basics#graph-styling)
 
-```python
-import matplotlib.pyplot as plt
-import networkx as nx
+Don't forget to check out [**other examples**](/visualization/basics#other-examples) and [**useful tips**](/visualization/basics#useful-tips) which can help you style your graph.
 
-G = nx.petersen_graph()
-plt.subplot(121)
-
-nx.draw(G, with_labels=True, font_weight='bold', node_color='orange')
-plt.subplot(122)
-
-nx.draw_shell(G, nlist=[range(5, 10), range(5)], with_labels=True, font_weight='bold', node_color='orange')
-
-plt.show()
-```
-
-The output is:
-
-![Matplotlib figure](/img/visualization/visualization-matplotlib-1.png)
-
-Here are some other options for drawing graphs:
-
-```python
-import matplotlib.pyplot as plt
-import networkx as nx
-
-options = {
-    'node_color': 'orange',
-    'node_size': 100,
-    'width': 3,
-}
-
-G = nx.petersen_graph()
-
-plt.subplot(221)
-nx.draw_random(G, **options)
-
-plt.subplot(222)
-nx.draw_circular(G, **options)
-
-plt.subplot(223)
-nx.draw_spectral(G, **options)
-
-plt.subplot(224)
-nx.draw_shell(G, nlist=[range(5,10), range(5)], **options)
-
-plt.show()
-```
-
-The output is:
-
-![Matplotlib figure](/img/visualization/visualization-matplotlib-2.png)
-
-## Where to next?
-
-If you wish to learn more about drawing graphs with NetworkX, visit the [draw_networkx()](https://networkx.org/documentation/stable/reference/generated/networkx.drawing.nx_pylab.draw_networkx.html#networkx.drawing.nx_pylab.draw_networkx) and [Graph Layout](https://networkx.org/documentation/stable/reference/drawing.html#module-networkx.drawing.layout) sections in the NetworkX reference guide.
+### Learn more
 
 Take a look at some of the most common questions when it comes to drawing graphs:
-1. [How to draw directed graphs using NetworkX in Python?](/visualization/basics#1-how-to-draw-directed-graphs-using-networkx-in-python)
-2. [How to draw a NetworkX graph with labels?](/visualization/basics#2-how-to-draw-a-networkx-graph-with-labels)
-3. [How to change the color and width of edges in NetworkX graphs according to edge attributes?](/visualization/basics#3-how-to-change-the-color-and-width-of-edges-in-networkx-graphs-according-to-edge-attributes)
-4. [How to color nodes in NetworkX graphs?](/visualization/basics#4-how-to-color-nodes-in-networkx-graphs)
-5. [How to color nodes in NetworkX graphs according to their attributes?](/visualization/basics#5-how-to-color-nodes-in-networkx-graphs-according-to-their-attributes)
+- [How to draw directed graphs using NetworkX in Python?](/visualization/basics#how-to-draw-directed-graphs-using-networkx-in-python)
+- [How to draw a NetworkX graph with labels?](/visualization/basics#how-to-draw-a-networkx-graph-with-labels)
+- [How to change the color and width of edges in NetworkX graphs according to edge attributes?](/visualization/basics#how-to-change-the-color-and-width-of-edges-in-networkx-graphs-according-to-edge-attributes)
+- [How to color nodes in NetworkX graphs?](/visualization/basics#how-to-color-nodes-in-networkx-graphs)
+- [How to color nodes in NetworkX graphs according to their attributes?](/visualization/basics#how-to-color-nodes-in-networkx-graphs-according-to-their-attributes)
 
 
-See how to visualise your graphs easy [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=visualization%2Boverview&utm_content=visualizeiteasy).
+If you find this kind of drawing complicated and it is not working that well for your scale, check out how to visualise your graphs easy [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=visualization%2Boverview&utm_content=visualizeiteasy).

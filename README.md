@@ -1,6 +1,6 @@
 # 📚 NetworkX guide
 
-Welcome to the NetworkX Guide website repository!
+Welcome to the [NetworkX Guide website](https://www.networkx.guide) repository!
 
 This site provides current and useful information about the NetworkX Python library for studying graphs and networks.
 

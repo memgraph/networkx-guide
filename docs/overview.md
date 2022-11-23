@@ -17,3 +17,4 @@ The documentation is divided into the following sections:
 * **[Functions](/functions)** - A complete list of all functions available in NetworkX.
 * **[Algorithms](/algorithms)** - Graph algorithms explained in simple terms with accompanying usage examples. 
 * **[Other resources](/other-resources)** - A compilation of NetworkX related resources. 
+* **[FAQ](/faq)** - Read the most common questions asked on community channels and learn answers to them.

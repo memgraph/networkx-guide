@@ -1,7 +1,6 @@
 ---
 id: visualization
-title: Visualization overview
-sidebar_label: Visualization overview
+title: Visualizing graphs overview
 slug: /visualization
 ---
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';

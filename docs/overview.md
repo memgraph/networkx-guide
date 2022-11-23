@@ -16,4 +16,6 @@ The documentation is divided into the following sections:
 * **[Visualizing graphs](/visualization)** - A section dedicated to graph visualization functionalities. 
 * **[Functions](/functions)** - A complete list of all functions available in NetworkX.
 * **[Algorithms](/algorithms)** - Graph algorithms explained in simple terms with accompanying usage examples. 
+* **[Biggest challenges](/biggest-challenges)** - Learn about the most common challenges NetworkX developers are facing.
 * **[Other resources](/other-resources)** - A compilation of NetworkX related resources. 
+* **[FAQ](/faq)** - Read the most common questions asked on community channels and learn answers to them.

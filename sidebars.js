@@ -4,19 +4,20 @@ module.exports = {
     {
       type: 'category',
       label: 'Getting started',
-      items: ['getting-started/getting-started', 'getting-started/installation'
-      ],
+      link: { type: 'doc', id: 'getting-started/getting-started' },
+      items: ['getting-started/basics', 'getting-started/installation'],
     },
     {
       type: 'category',
       label: 'Visualizing graphs',
-      items: ['visualization/visualization',
-        'visualization/basics'],
+      link: { type: 'doc', id: 'visualization/visualization' },
+      items: ['visualization/basics'],
     },
     {
       type: 'category',
       label: 'Functions',
-      items: ['functions/functions',
+      link: { type: 'doc', id: 'functions/functions' },
+      items: [
         {
           type: 'category',
           label: 'Attributes',
@@ -26,7 +27,8 @@ module.exports = {
     {
       type: 'category',
       label: 'Algorithms',
-      items: ['algorithms/algorithms',
+      link: { type: 'doc', id: 'algorithms/algorithms' },
+      items: [
         {
           type: 'category',
           label: 'Shortest path',
@@ -45,5 +47,6 @@ module.exports = {
         'algorithms/components/weakly-connected-components',],
     },
     'other-resources',
+    'faq',
   ],
 };

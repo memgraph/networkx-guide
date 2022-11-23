@@ -1,0 +1,29 @@
+.ctaButton {
+    padding: 13px 23px;
+    border-radius: 6px;
+    background-color: #303846;
+    transition: all 200ms ease;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 550;
+    text-align: center;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+    z-index: 2;
+    position: relative;
+}
+
+.ctaButton:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 95%;
+    box-shadow: 4px 2px 8px -1px rgb(31 120 180 / 70%);
+}
+
+.ctaBox {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}

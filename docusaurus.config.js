@@ -15,6 +15,11 @@ module.exports = {
     },
   ],
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     metadata: [
       {
         name: "facebook-domain-verification",
@@ -29,11 +34,6 @@ module.exports = {
         src: 'img/networkx-logo-small.png',
       },
       items: [
-        {
-          to: '/',
-          label: 'Guide',
-          position: 'left',
-        },
         {
           href: "https://github.com/memgraph/memgraph",
           className: 'header-github-link',
@@ -50,7 +50,7 @@ module.exports = {
           items: [
             {
               label: 'Getting started',
-              to: '/',
+              to: '/getting-started',
             },
             {
               label: 'Visualizing graphs',
@@ -67,6 +67,10 @@ module.exports = {
             {
               label: 'Other resources',
               to: '/other-resources',
+            },
+            {
+              label: 'FAQ',
+              to: '/faq',
             },
           ],
         },
@@ -86,7 +90,7 @@ module.exports = {
               href: 'https://networkx.org/documentation/stable/index.html',
             },
             {
-              label: 'NetworkX Resources',
+              label: 'Memgraph for NetworkX Developers',
               href: 'https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=footer&utm_content=textlinkresources',
             },
           ],
@@ -105,6 +109,8 @@ module.exports = {
         alt: 'Memgraph Logo',
         src: 'img/Memgraph-logo-white-rgb.png',
         href: 'https://memgraph.com',
+        width: 160,
+        height: 74,
       },
       copyright: `Copyright © ${new Date().getFullYear()} NetworkX Guide, Powered by Memgraph.`,
     },

@@ -4,6 +4,9 @@ title: Girvan-Newman algorithm
 sidebar_label: Girvan-Newman
 ---
 
+import CtaButton from "@site/src/components/cta-button/cta-button";
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+
 The **Girvan-Newman algorithm** for the detection and analysis of community structure relies on the *iterative elimination of edges that have the highest number of shortest paths between nodes passing through them*. By removing edges from the graph one-by-one, the network breaks down into smaller pieces, so-called communities. The algorithm was introduced by Michelle Girvan and Mark Newman.
 
 ## How does it work?
@@ -35,6 +38,8 @@ The calculation of betweenness centrality is not standardized and there are many
 
 The image above shows an undirected graph colored based on the betweenness centrality of each vertex from least (red) to greatest (blue).
 
+Read more about it at the [betweenness centrality](/algorithms/centrality-algorithms/betweenness-centrality) page.
+
 ## Pseudocode
 
 In each iteration, calculate the betweenness centrality for all edges in the graph. Remove the edge with the highest centrality. Repeat until there are no more edges left.
@@ -59,6 +64,8 @@ UNTIL number of edges in graph is 0
 girvan_newman(G, most_valuable_edge=None)
 ```
 
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=communitydetection%2Bgirvannewman&utm_content=findfasteralgorithms).
+
 ### Method input
 
 The first input parameter of the method, `G`, is a NetworkX graph. 
@@ -70,6 +77,17 @@ The output of the method is an iterator over tuples of sets of nodes in `G`. Eac
 
 ### Example
 
+<Tabs
+  groupId="gn"
+  defaultValue="code"
+  values={[
+    {label: 'Python code', value: 'code'},
+    {label: 'Output', value: 'output'},
+    {label: 'Visualization', value: 'visualization'},
+  ]
+}>
+  <TabItem value="code"> 
+
 ```python
 import matplotlib.pyplot as plt
 import networkx as nx
@@ -80,29 +98,45 @@ communities = girvan_newman(G)
 
 node_groups = []
 for com in next(communities):
-  node_groups.append(list(com))
+    node_groups.append(list(com))
 
 print(node_groups)
 
 color_map = []
 for node in G:
     if node in node_groups[0]:
-        color_map.append('blue')
-    else: 
-        color_map.append('green')  
+        color_map.append("red")
+    else:
+        color_map.append("orange")
 nx.draw(G, node_color=color_map, with_labels=True)
 plt.show()
 ```
+  </TabItem>
 
-The output is:
+
+  <TabItem value="output">
 
 ```
 [[0, 1, 3, 4, 5, 6, 7, 10, 11, 12, 13, 16, 17, 19, 21], 
 [2, 8, 9, 14, 15, 18, 20, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33]]
 ```
 
+  </TabItem>
+
+<TabItem value="visualization">
+
 The network has been divided into two distinct communities:
 
 ![Graph](/img/algorithms/community-detection/girvan-newman-matplotlib.png)
 
-**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bgirvannewman&utm_content=findfasteralgorithms).
+  </TabItem>
+
+</Tabs>
+
+
+## Where to next?
+
+There are many graph algorithms libraries out there, with their own implementations of Girvan-Newman's algorithm. NetworkX's algorithms are written in Python, and there are many other libraries that offer faster C++ implementations, such as [**MAGE**](https://github.com/memgraph/mage), a graph algorithms library developed by Memgraph team.
+
+<CtaButton title="Memgraph for NetworkX developers" url="https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=communitydetection%2Bgirvannewman&utm_content=ctabutton"></CtaButton>
+

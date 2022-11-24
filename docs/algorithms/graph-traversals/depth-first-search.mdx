@@ -1,0 +1,87 @@
+---
+title: Depth-first search
+slug: /algorithms/graph-traversals/dfs
+---
+
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import CtaButton from "@site/src/components/cta-button/cta-button";
+
+Depth-first search (DFS) is an algorithm for traversing through the graph. The algorithm starts at the root node and explores each neighboring node as far as possible. The moment it reaches a dead-end, it backtracks until it finds a new, undiscovered node, then traverses from that node to find more undiscovered nodes. In that way, the algorithm visits each node in the graph.
+
+
+
+<Tabs
+  groupId="dfs"
+  defaultValue="code"
+  values={[
+    {label: 'Graph', value: 'graph'},
+    {label: 'Python code', value: 'code'},
+    {label: 'Output', value: 'output'},
+  ]
+}>
+  <TabItem value="graph"> 
+
+Let's say you have a graph in the `graph.txt` file:
+
+```
+go a
+go b
+go c
+a d
+a e
+a b
+b f
+b c
+c g
+d h
+d e
+e f
+f i
+g f
+h i
+```
+  </TabItem>
+
+  <TabItem value="code"> 
+
+Then you can read the graph, calculate shortest paths with depth-first search algorithm and draw the results: 
+
+```python
+import networkx as nx
+import matplotlib.pyplot as plt
+
+
+with open("graph.txt") as f:
+    lines = f.readlines()
+
+edgeList = [line.strip().split() for line in lines]
+
+g = nx.Graph()
+g.add_edges_from(edgeList)
+
+pos = nx.planar_layout(g)
+
+nx.draw(g, pos, with_labels=True, node_color="#f86e00")
+
+dfs = nx.dfs_tree(g, source="go")
+
+nx.draw(dfs, pos, with_labels=True, node_color="#f86e00", edge_color="#dd2222")
+
+plt.show()
+```
+
+  </TabItem>
+
+  <TabItem value="output">
+
+![dfs](../../../static/img/algorithms/graph-traversals/dfs.png)
+
+  </TabItem>
+
+</Tabs>
+
+## Where to next?
+
+There are many graph algorithms libraries out there, with their own implementations of depth-first search algorithm. NetworkX's algorithms are written in Python, and there are many other libraries that offer faster C++ implementations, such as [**MAGE**](https://github.com/memgraph/mage), a graph algorithms library developed by Memgraph team.
+
+<CtaButton title="Memgraph for NetworkX developers" url="https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=graphtraversals%2Bdfs&utm_content=ctabutton"></CtaButton>

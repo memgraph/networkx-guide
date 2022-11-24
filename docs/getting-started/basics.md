@@ -5,6 +5,7 @@ slug: /basics
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import CtaButton from "@site/src/components/cta-button/cta-button";
 
 In this guide you'll learn how to:
 
@@ -77,7 +78,9 @@ plt.show()
 
 </Tabs>
 
+:::caution memory issues
 This kind of graph creation is good enough for testing, but be careful, since each time you start your script, the data has to be loaded in-memory. To learn more about it, head over to our [**FAQ**](/faq#generated-graph).
+:::
 
 ### Reading graphs
 
@@ -139,7 +142,9 @@ plt.show()
 
 </Tabs>
 
+:::caution
 This kind of graph creation is great and fast for smaller datasets. If your dataset becomes too large, you can run into memory issues. Read more about it [**here**](/faq#store-huge-graph).
+:::
 
 ### Adding nodes and edges
 
@@ -222,7 +227,9 @@ plt.show()
 
 </Tabs>
 
+:::caution memory issues
 This kind of graph creation is great and fast for smaller datasets. If your dataset becomes too large, you can run into memory issues. Read more about it [**here**](/faq#load-graph).
+:::
 
 ### Removing nodes and edges from the graph
 
@@ -553,8 +560,13 @@ graph [
 
 </Tabs>
 
+:::caution performance loss
 This NetworkX feature is often being used when a lot of time is wasted on the graph loading each time you want to analyze the graph. This happens because NetworkX has to load graph in memory on each run. You can find an answer on what is the best solution to avoid performance loss due to graph loading in our [**FAQ section**](/faq#store-huge-graph). 
+:::
 
 ## Where to next?
 
 There are many other [**learning resources**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=getting%2Bstarted&utm_content=learningresources), such as courses, whitepapers and blog posts. With the help of these valuable resources, you can learn more about the importance of graph analytics and which tools are out there to help you. Also, if you run into a common NetworkX problem, don't forget to check out our [**FAQ**](/faq) section.
+
+
+<CtaButton title="Memgraph for NetworkX developers" url="https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=gettingstarted%2Bbasics&utm_content=ctabutton"></CtaButton>

@@ -4,6 +4,9 @@ title: Weakly connected components algorithm (Union find)
 sidebar_label: Weakly connected components (Union find)
 ---
 
+import CtaButton from "@site/src/components/cta-button/cta-button";
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+
 A weakly connected component is a subgraph that is unreachable from other nodes/vertices of a graph or subgraph. The algorithm was described by A. Galler and Michael J. in 1964 and specific implementations either utilize breadth-first search or depth-first search to find the graph components.
 How does it work?
 The Weakly Connected Components algorithm (WCC), also known as Union Find, searches for distinct sets of connected nodes in a graph. All nodes in such a set are reachable from any other node in the same set.
@@ -41,6 +44,8 @@ ENDFOR
 weakly_connected_components(G)
 ```
 
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=components%2Bweaklyconnectedcomponents&utm_content=findfasteralgorithms).
+
 ### Method input
 
 The input parameter of the method, `G`, is a directed graph.
@@ -50,6 +55,17 @@ The input parameter of the method, `G`, is a directed graph.
 The output of the method is a generator of sets. Each set contains the nodes of one weakly connected component.
 
 ### Example
+
+<Tabs
+  groupId="wcc"
+  defaultValue="code"
+  values={[
+    {label: 'Python code', value: 'code'},
+    {label: 'Output', value: 'output'},
+    {label: 'Visualization', value: 'visualization'},
+  ]
+}>
+  <TabItem value="code"> 
 
 ```python
 import matplotlib.pyplot as plt
@@ -77,14 +93,29 @@ for node in G:
 nx.draw(G, node_color=color_map, with_labels=True)
 plt.show()
 ```
+  </TabItem>
 
-The output is:
+
+  <TabItem value="output">
+
 ```
 [[0, 1, 2, 3], [10, 11, 12]]
 ```
+
+  </TabItem>
+
+<TabItem value="visualization">
 
 The network has two weakly connected components:
 
 ![WCC matplotlib](/img/algorithms/components/wcc-matplotlib.png)
 
-**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bweaklyconnectedcomponents&utm_content=findfasteralgorithms).
+  </TabItem>
+
+</Tabs>
+
+## Where to next?
+
+There are many graph algorithms libraries out there, with their own implementations of weakly connected components algorithm. NetworkX's algorithms are written in Python, and there are many other libraries that offer faster C++ implementations, such as [**MAGE**](https://github.com/memgraph/mage), a graph algorithms library developed by Memgraph team.
+
+<CtaButton title="Memgraph for NetworkX developers" url="https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=components%2Bweaklyconnectedcomponents&utm_content=ctabutton"></CtaButton>

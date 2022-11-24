@@ -1,21 +1,23 @@
 ---
-id: pagerank
 title: PageRank algorithm
 sidebar_label: PageRank
 ---
 
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import CtaButton from "@site/src/components/cta-button/cta-button";
+
 Typing terms in Google and searching them up yields a lot of results. But why are we getting the results in that order? The answer to that question is the PageRank algorithm. The PageRank algorithm is a way to measure the importance of a webpage by analyzing the quantity and quality of the links that point to it.
 
-![PageRank-example-1](/img/algorithms/link-analysis/pagerank-example-1.jpg)
+![PageRank-example-1](/img/algorithms/centrality-algorithms/pagerank-example-1.jpg)
 
 ## How does it work?
 
 Google interprets a link from page A to page B as a vote from page A to page B.  All incoming links can be interpreted as votes. Looking at Figure X, we can say that then, the yellow node is more important than the red node.
 
-![PageRank-example-2](/img/algorithms/link-analysis/pagerank-example-2.jpg)
+![PageRank-example-2](/img/algorithms/centrality-algorithms/pagerank-example-2.jpg)
 
 But, it also takes into consideration the “importance” of the page that is “giving” out the vote. If the page that’s casting a vote is more important, the links are worth more and it will help rank up the other pages. Page’s importance is equal to the sum of the votes of its incoming links.
-![PageRank-example-3](/img/algorithms/link-analysis/pagerank-example-3.jpg)
+![PageRank-example-3](/img/algorithms/centrality-algorithms/pagerank-example-3.jpg)
 
 Mathematically, **PageRank** (PR) is defined as:
 
@@ -28,7 +30,7 @@ C(A) is defined as the number of links going out of page A.
 
 The algorithm is robust against spam since it’s not easy for a web page owner to add in links to their page from other important pages. The disadvantage is that it favours the older pages because new pages will not have many links going towards them. 
 
-## Practical Applications
+## Practical applications
 
 * Determining key species in ecology by mapping the relationship between species in the ecosystem. PageRank allows users to identify the most important species. 
 * It’s been used to rank public spaces or streets, predicting traffic flow and human movement
@@ -63,6 +65,8 @@ ENDFOR
 pagerank(G, alpha=0.85, personalization=None, max_iter=100, tol=1e-06, nstart=None, weight='weight', dangling=None)
 ```
 
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=centralityalgorithms%2Bpagerank&utm_content=findfasteralgorithms).
+
 ### Method input
 
 The first input parameter of the method, G, is a NetworkX graph. Undirected graphs will be converted to a directed graph with two directed edges for each undirected edge.
@@ -78,7 +82,18 @@ The output of the method is a dictionary with nodes as keys and with PageRank as
 
 ### Example
 
-Python’s NetworkX implements the PageRank algorithm as part of its Link Analysis algorithms. In the example below, we will showcase how to use the PageRank algorithm. We will calculate PageRank values on the graph from figure X.
+Python’s NetworkX implements the PageRank algorithm as part of its Link Analysis algorithms. In the example below, we will showcase how to use the PageRank algorithm. 
+
+<Tabs
+  groupId="pagerank"
+  defaultValue="code"
+  values={[
+    {label: 'Python code', value: 'code'},
+    {label: 'Output', value: 'output'},
+    {label: 'Visualization', value: 'visualization'},
+  ]
+}>
+  <TabItem value="code"> 
 
 ```python
 G = nx.DiGraph()
@@ -97,13 +112,33 @@ pos = nx.spiral_layout(G)
 nx.draw(G, pos, with_labels = True, node_color="#f86e00")
 plt.show()
 ```
+  </TabItem>
 
-The output is:
+
+  <TabItem value="output">
 
 ```
 Page rank values: {'A': 0.408074514346756, 'B': 0.07967426232810562, 'C': 0.13704946318948708, 'D': 0.13704946318948708, 'E': 0.021428571428571432, 'F': 0.07967426232810562, 'G': 0.13704946318948708}
 ```
 
-![PageRank example](/img/algorithms/link-analysis/pagerank-matplotlib.png)
+  </TabItem>
 
-**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bweaklyconnectedcomponents&utm_content=findfasteralgorithms).
+<TabItem value="visualization">
+
+![PageRank example](/img/algorithms/centrality-algorithms/pagerank-matplotlib.png)
+
+  </TabItem>
+
+</Tabs>
+
+## Where to next?
+
+There are many graph algorithms libraries out there, with their own implementations of PageRank algorithm. NetworkX's algorithms are written in Python, and there are many other libraries that offer faster C++ implementations, such as [**MAGE**](https://github.com/memgraph/mage), a graph algorithms library developed by Memgraph team.
+
+<CtaButton title="Memgraph for NetworkX developers" url="https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=centralityalgorithms%2Bpagerank&utm_content=ctabutton"></CtaButton>
+
+
+
+
+
+

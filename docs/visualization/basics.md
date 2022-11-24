@@ -5,6 +5,7 @@ sidebar_label: Drawing basics
 ---
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+import CtaButton from "@site/src/components/cta-button/cta-button";
 
 ## Draw methods
 
@@ -547,3 +548,5 @@ plt.show()
 ## Where to next?
 
 If you wish to learn more about drawing graphs with NetworkX, visit the [`draw_networkx()`](https://networkx.org/documentation/stable/reference/generated/networkx.drawing.nx_pylab.draw_networkx.html#networkx.drawing.nx_pylab.draw_networkx) and [Graph Layout](https://networkx.org/documentation/stable/reference/drawing.html#module-networkx.drawing.layout) sections in the NetworkX reference guide. If you find this kind of drawing complicated and it is not working that well for your scale, check out how to visualise your graphs easy [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=visualization%2Bbasics&utm_content=visualizeiteasy).
+
+<CtaButton title="Memgraph for NetworkX developers" url="https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=visualization+basics&utm_content=ctabutton"></CtaButton>

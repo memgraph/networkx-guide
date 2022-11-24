@@ -1,8 +1,6 @@
 ---
-id: community-detection
-title: Community detection algorithms
-sidebar_label: Community detection
 slug: /algorithms/community-detection
+title: Community detection algorithms overview
 ---
 
 While humans are very good at detecting distinct or repetitive patterns among a few components, the nature of large interconnected networks makes it practically impossible to perform such basic tasks manually. Groups of densely connected nodes are easy to spot visually, but more sophisticated methods are needed to perform these tasks programmatically. Community detection algorithms are used to find such groups of densely connected components in various networks.
@@ -10,6 +8,8 @@ While humans are very good at detecting distinct or repetitive patterns among a 
 M. Girvan and M. E. J. Newman have proposed one of the most widely adopted community detection algorithms. According to them, groups of nodes in a network are tightly connected within communities and loosely connected between communities.
 
 ![Community-detection-example](/img/algorithms/community-detection/community-detection-example.jpg)
+
+Through this section you'll learn about [**Girvan-Newman algorithm**](/algorithms/community-detection/girvan-newman).
 
 ## Practical applications
 
@@ -36,9 +36,11 @@ On the other hand, **divisive** methods rely on the process of removing edges fr
 | **Clique Percolation algorithm** | The algorithm finds k-clique communities in a graph using the percolation method.                                                     | [NetworkX Reference Guide](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.kclique.k_clique_communities.html#networkx.algorithms.community.kclique.k_clique_communities) |
 | **Kernighan-Lin algorithm**      | This algorithm partitions a network into two sets by iteratively swapping pairs of nodes to reduce the edge cut between the two sets. | [NetworkX Reference Guide](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.kernighan_lin.kernighan_lin_bisection.html#networkx.algorithms.community.kernighan_lin.kernighan_lin_bisection) |
 
-## Where to next?
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=communitydetection%2Boverview&utm_content=findfasteralgorithms).
 
-So far, we have covered these algorithms:
-* [Girvan-Newman algorithm](/algorithms/community-detection/girvan-newman).
 
-**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bcommunitydetection&utm_content=findfasteralgorithms).
+## Learn more
+
+There are many graph algorithms libraries out there, with their own implementations of community detection algorithms. NetworkX's algorithms are written in Python, and there are many other libraries that offer faster C++ implementations, such as [**MAGE**](https://github.com/memgraph/mage), a graph algorithms library developed by Memgraph team.
+
+<CtaButton title="Memgraph for NetworkX developers" url="https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=communitydetection%2Boverview&utm_content=ctabutton"></CtaButton>

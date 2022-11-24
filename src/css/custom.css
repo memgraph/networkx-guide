@@ -45,7 +45,13 @@ img[alt="visualization-basics-styling"],
 img[alt="karate-club-dataset"],
 img[alt="draw-csv"],
 img[alt="kevin-bacon"],
-img[alt="matplotlib-figure"] {
+img[alt="matplotlib-figure"],
+img[alt="bfs"],
+img[alt="dfs"],
+img[alt="centrality-bc"],
+img[alt="centrality-degree"],
+img[alt="centrality-closeness"],
+img[alt="centrality-katz"] {
   width: 75%;
 }
 

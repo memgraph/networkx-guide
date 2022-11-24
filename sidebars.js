@@ -31,17 +31,38 @@ module.exports = {
       items: [
         {
           type: 'category',
+          label: 'Graph traversals',
+          link: { type: 'doc', id: 'algorithms/graph-traversals/overview' },
+          items: [
+            'algorithms/graph-traversals/breadth-first-search',
+            'algorithms/graph-traversals/depth-first-search'],
+        },
+        {
+          type: 'category',
           label: 'Shortest path',
-          items: ['algorithms/shortest-path/shortest-path',
+          link: { type: 'doc', id: 'algorithms/shortest-path/overview' },
+          items: [
             'algorithms/shortest-path/dijkstra',
             'algorithms/shortest-path/a-star-search',
             'algorithms/shortest-path/floyd-warshall',],
         },
-        'algorithms/link-analysis/pagerank',
+        {
+          type: 'category',
+          label: 'Centrality algorithms',
+          link: { type: 'doc', id: 'algorithms/centrality-algorithms/overview' },
+          items: [
+            'algorithms/centrality-algorithms/pagerank',
+            'algorithms/centrality-algorithms/betweenness-centrality',
+            'algorithms/centrality-algorithms/degree-centrality',
+            'algorithms/centrality-algorithms/closeness-centrality',
+            'algorithms/centrality-algorithms/katz-centrality',
+          ],
+        },
         {
           type: 'category',
           label: 'Community detection',
-          items: ['algorithms/community-detection/community-detection',
+          link: { type: 'doc', id: 'algorithms/community-detection/overview' },
+          items: [
             'algorithms/community-detection/girvan-newman',],
         },
         'algorithms/components/weakly-connected-components',],

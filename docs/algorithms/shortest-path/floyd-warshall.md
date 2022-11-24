@@ -4,6 +4,9 @@ title: Floyd-Warshall algorithm
 sidebar_label: Floyd-Warshall
 ---
 
+import CtaButton from "@site/src/components/cta-button/cta-button";
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+
 Floyd-Warshall algorithm is an algorithm for finding the shortest path between all the pairs of vertices in a weighted graph. The result of the algorithm is a list of lengths of shortest paths between all pairs of vertices. 
 
 The algorithm was first designed as an example for dynamic programming by Robert Floyd in 1962. The same year, Stephen Warshall published essentially the same algorithm, but as a graph example. As the algorithms were essentially the same, the algorithm got named after both authors.
@@ -49,6 +52,9 @@ ENDFOR
 
 `floyd_warshall(G, weight='weight')`
 
+**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=shortestpath%2Bfloydwarshall&utm_content=findfasteralgorithms).
+
+
 ### Method input
 
 The first input parameter of the method, G, is a NetworkX graph. 
@@ -60,10 +66,19 @@ The output of the method is a dictionary keyed by source and target, of shortest
 
 ### Example
 
-In Python’s library, NetworkX implements the Floyd-Warshall algorithm as part of the shortest path algorithms. Insert the graph from Figure 1 in NetworkX (see Appendix A) before you start the example program.
+<Tabs
+  groupId="floyd"
+  defaultValue="code"
+  values={[
+    {label: 'Python code', value: 'code'},
+    {label: 'Output', value: 'output'},
+  ]
+}>
+  <TabItem value="code"> 
 
-```python=
+```python
 import networkx as nx
+import pprint as pp
 
 edges = [(1,2, {'weight':4}),
         (1,3,{'weight':2}),
@@ -91,8 +106,10 @@ fw = nx.floyd_warshall(G, weight='weight')
 results = {a:dict(b) for a,b in fw.items()}  
 pp.pprint(results)
 ```
+  </TabItem>
 
-The output is:
+
+  <TabItem value="output">
 
 ```
 {1: {1: 0, 2: 3, 3: 2, 4: 8, 5: 10, 6: 15},
@@ -103,5 +120,16 @@ The output is:
  6: {1: 15, 2: 12, 3: 13, 4: 7, 5: 5, 6: 0}}
 ```
 
+  </TabItem>
 
-**Not fast enough?** Find 100x faster algorithms [**here**](https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=algorithms%2Bfloydwarshall&utm_content=findfasteralgorithms).
+</Tabs>
+
+
+## Where to next?
+
+There are many graph algorithms libraries out there, with their own implementations of Floyd-Warshall's algorithm. NetworkX's algorithms are written in Python, and there are many other libraries that offer faster C++ implementations, such as [**MAGE**](https://github.com/memgraph/mage), a graph algorithms library developed by Memgraph team.
+
+<CtaButton title="Memgraph for NetworkX developers" url="https://memgraph.com/memgraph-for-networkx?utm_source=networkx-guide&utm_medium=referral&utm_campaign=networkx_ppp&utm_term=shortestpath%2Bfloydwarshall&utm_content=ctabutton"></CtaButton>
+
+
+

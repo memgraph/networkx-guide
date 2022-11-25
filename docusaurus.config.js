@@ -65,6 +65,10 @@ module.exports = {
               to: '/algorithms',
             },
             {
+              label: 'Biggest challenges',
+              to: '/biggest-challenges',
+            },
+            {
               label: 'Other resources',
               to: '/other-resources',
             },

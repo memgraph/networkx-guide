@@ -67,6 +67,7 @@ module.exports = {
         },
         'algorithms/components/weakly-connected-components',],
     },
+    'biggest-challenges',
     'other-resources',
     'faq',
   ],

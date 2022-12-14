@@ -14,9 +14,9 @@ With this site, we hope to combine all the relevant resources like guides, tutor
 
 If you want to quickly learn all about graphs and how to analyze them sign up for the **Intro to Graph Analytics in Python free course**. Get to know the graph analytics tools landscape and see engaging examples to find out how to use the most powerful network analysis Python tools.
 
-[![free-course-intro-to-graph-analytics](../static/img/free-course-intro-to-graph-analytics.jpg)](https://app.livestorm.co/memgraph/intro-to-graph-analytics-in-python "Intro to Graph Analytics in Python Course")
+[![free-course-intro-to-graph-analytics](../static/img/free-course-intro-to-graph-analytics.jpg)](https://memgr.ph/intro-to-graph-analytics-in-python "Intro to Graph Analytics in Python Course")
 
-<!-- <CtaButton title="Sign up for the course" url="https://app.livestorm.co/memgraph/intro-to-graph-analytics-in-python"></CtaButton> -->
+<!-- <CtaButton title="Sign up for the course" url="https://memgr.ph/intro-to-graph-analytics-in-python"></CtaButton> -->
 
 The documentation is divided into the following sections:
 * **[Getting started](/getting-started)** - A beginner guide for developers who are new to the world of network analysis.

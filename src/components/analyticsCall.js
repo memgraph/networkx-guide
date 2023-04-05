@@ -9,20 +9,22 @@ export default (function () {
 
     return {
         onRouteUpdate({ location }) {
-            window.analytics.page({
-                title: document.title,
-                path: location.pathname
-            });
+            if (window.analytics) {
+                window.analytics.page({
+                    title: document.title,
+                    path: location.pathname
+                });
+            }
 
             hotjar.initialize(1822641, 6);
 
-            fbq('init', '323216482545654');
-            fbq('track', 'PageView');
+            if (window.fbq) {
+                window.fbq('init', '323216482545654');
+                window.fbq('track', 'PageView');
+            }
 
-            if (window.ldfdr.pageview && typeof window.ldfdr.pageview === 'function') {
-                if (window.ldfdr.pageview && typeof window.ldfdr.pageview === 'function') {
-                    window.ldfdr.pageview();
-                }
+            if (window && window.ldfdr && window.ldfdr.pageview && typeof window.ldfdr.pageview === 'function') {
+                window.ldfdr.pageview();
             }
         },
     };

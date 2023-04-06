@@ -24,6 +24,10 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.footer {
+  background-color: #231F20;
+}
+
 img[alt="Betweenness-example"],
 img[alt="PageRank-example-3"],
 img[alt="visualization-basics-draw-simple"],

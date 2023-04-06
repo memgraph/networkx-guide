@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Memgraph\'s Guide to NetworkX',
+  title: 'Memgraph\'s Guide for NetworkX library',
   tagline: 'Learn NetworkX in 15 minutes',
   url: 'https://networkx.guide',
   baseUrl: '/',
@@ -28,7 +28,7 @@ module.exports = {
       },
     ],
     navbar: {
-      title: 'Memgraph\'s Guide to NetworkX',
+      title: 'Memgraph\'s Guide for NetworkX library',
       logo: {
         alt: 'Memgraph Logo',
         src: 'img/memgraph-logo-round-corners.png',
@@ -116,7 +116,7 @@ module.exports = {
         width: 160,
         height: 74,
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Memgraph\'s Guide to NetworkX`,
+      copyright: `Copyright © ${new Date().getFullYear()} Memgraph\'s Guide for NetworkX library`,
     },
     announcementBar: {
       id: "topnotice",
@@ -124,7 +124,7 @@ module.exports = {
         'Memgraph is not associated or affiliated with NetworkX. None of the information presented on this website is provided or approved by NetworkX.',
       backgroundColor: "#fafbfc",
       textColor: "#091E42",
-      isCloseable: true,
+      isCloseable: false,
     },
   },
   presets: [

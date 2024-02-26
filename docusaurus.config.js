@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Memgraph\'s Guide for NetworkX library',
   tagline: 'Learn NetworkX in 15 minutes',
-  url: 'https://networkx.guide',
-  baseUrl: '/',
+  url: 'https://memgraph.github.io',
+  baseUrl: '/networkx-guide/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/memgraph-logo-round-corners.png',

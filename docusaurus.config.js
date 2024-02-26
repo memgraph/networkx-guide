@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Memgraph\'s Guide for NetworkX library',
   tagline: 'Learn NetworkX in 15 minutes',
-  url: 'https://networkx.guide',
-  baseUrl: '/',
+  url: 'https://memgraph.github.io',
+  baseUrl: '/networkx-guide/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/memgraph-logo-round-corners.png',
@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'networkx-guide',
   scripts: [
     {
-      src: `https://networkx.guide/js/load-analytics.js`,
+      src: `https://memgraph.github.io/networkx-guide/js/load-analytics.js`,
       //src: `http://localhost:3000/js/load-analytics.js`,
     },
   ],

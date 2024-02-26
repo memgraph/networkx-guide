@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'networkx-guide',
   scripts: [
     {
-      src: `https://networkx.guide/js/load-analytics.js`,
+      src: `https://memgraph.github.io/networkx-guide/js/load-analytics.js`,
       //src: `http://localhost:3000/js/load-analytics.js`,
     },
   ],

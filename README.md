@@ -1,6 +1,6 @@
 # 📚 NetworkX guide
 
-Welcome to the [Memgraph's guide for NetworkX library website](https://www.networkx.guide) repository!
+Welcome to the [Memgraph's guide for NetworkX library website](https://memgraph.com/networkx-guide) repository!
 
 This site provides current and useful information about the NetworkX Python library for studying graphs and networks.
 
@@ -8,12 +8,12 @@ With this site, we hope to combine all the relevant resources like guides, tutor
 
 ## 🔖 Guide content
 
-- [Getting started](https://networkx.guide/getting-started) - A beginner guide for developers who are new to the world of network analysis.
-- [Visualizing graphs](https://networkx.guide/visualization) - A section dedicated to graph visualization functionalities.
-- [Functions](https://networkx.guide/functions) - A complete list of all functions available in NetworkX.
-- [Algorithms](https://networkx.guide/algorithms) - Graph algorithms explained in simple terms with accompanying usage examples.
-- [Biggest challenges](https://networkx.guide/biggest-challenges) - Learn how to overcome the biggest challenges when working with NetworkX.
-- [Other resources](https://networkx.guide/other-resources) - A compilation of NetworkX related resources.
+- [Getting started](https://memgraph.com/networkx-guide/getting-started) - A beginner guide for developers who are new to the world of network analysis.
+- [Visualizing graphs](https://memgraph.com/networkx-guide/visualization) - A section dedicated to graph visualization functionalities.
+- [Functions](https://memgraph.com/networkx-guide/functions) - A complete list of all functions available in NetworkX.
+- [Algorithms](https://memgraph.com/networkx-guide/algorithms) - Graph algorithms explained in simple terms with accompanying usage examples.
+- [Biggest challenges](https://memgraph.com/networkx-guide/biggest-challenges) - Learn how to overcome the biggest challenges when working with NetworkX.
+- [Other resources](https://memgraph.com/networkx-guide/other-resources) - A compilation of NetworkX related resources.
 
 ## 🎓 Learning resources
 

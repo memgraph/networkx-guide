@@ -1,0 +1,1154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2021-04-07">
+    <creator>NetworkX 2.5</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="name" type="string" />
+      <attribute id="1" title="age" type="long" />
+      <attribute id="2" title="provider" type="string" />
+      <attribute id="3" title="compromised" type="boolean" />
+      <attribute id="4" title="fraudReported" type="boolean" />
+      <attribute id="5" title="username" type="string" />
+      <attribute id="6" title="platform" type="string" />
+      <attribute id="7" title="followers" type="long" />
+    </attributes>
+    <nodes>
+      <node id="0" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Krystle Blas" />
+          <attvalue for="1" value="71" />
+        </attvalues>
+      </node>
+      <node id="20" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Visa" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="1" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Jeri Tardy" />
+          <attvalue for="1" value="73" />
+        </attvalues>
+      </node>
+      <node id="21" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Diners" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="2" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Clarinda Sappington" />
+          <attvalue for="1" value="77" />
+        </attvalues>
+      </node>
+      <node id="22" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Maestro" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="3" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Jonas Parkerson" />
+          <attvalue for="1" value="46" />
+        </attvalues>
+      </node>
+      <node id="23" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Diners" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="4" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Florance Yaeger" />
+          <attvalue for="1" value="54" />
+        </attvalues>
+      </node>
+      <node id="24" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Maestro" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="5" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Carlton Casaus" />
+          <attvalue for="1" value="33" />
+        </attvalues>
+      </node>
+      <node id="25" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Visa" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="6" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Nathanial Bridgers" />
+          <attvalue for="1" value="33" />
+        </attvalues>
+      </node>
+      <node id="26" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Visa" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="7" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Ivana Stmartin" />
+          <attvalue for="1" value="77" />
+        </attvalues>
+      </node>
+      <node id="27" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Maestro" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="8" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Alethea Shedrick" />
+          <attvalue for="1" value="46" />
+        </attvalues>
+      </node>
+      <node id="28" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Maestro" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="9" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Mirian Scarbrough" />
+          <attvalue for="1" value="43" />
+        </attvalues>
+      </node>
+      <node id="29" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Diners" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="10" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Randal Blackshire" />
+          <attvalue for="1" value="58" />
+        </attvalues>
+      </node>
+      <node id="30" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Visa" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="11" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Jean Mathena" />
+          <attvalue for="1" value="57" />
+        </attvalues>
+      </node>
+      <node id="31" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Visa" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="12" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Wally Zamzow" />
+          <attvalue for="1" value="72" />
+        </attvalues>
+      </node>
+      <node id="32" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Maestro" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="13" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Vern Proto" />
+          <attvalue for="1" value="76" />
+        </attvalues>
+      </node>
+      <node id="33" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Diners" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="14" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Rodney Yale" />
+          <attvalue for="1" value="61" />
+        </attvalues>
+      </node>
+      <node id="34" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Diners" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="15" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Shari Damelio" />
+          <attvalue for="1" value="77" />
+        </attvalues>
+      </node>
+      <node id="35" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Visa" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="16" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Davis Calbert" />
+          <attvalue for="1" value="43" />
+        </attvalues>
+      </node>
+      <node id="36" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Maestro" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="17" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Ozie Rowan" />
+          <attvalue for="1" value="67" />
+        </attvalues>
+      </node>
+      <node id="37" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Maestro" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="18" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Dot Brautigam" />
+          <attvalue for="1" value="50" />
+        </attvalues>
+      </node>
+      <node id="38" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Maestro" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="19" label="Person">
+        <attvalues>
+          <attvalue for="0" value="Ileen Brungardt" />
+          <attvalue for="1" value="70" />
+        </attvalues>
+      </node>
+      <node id="39" label="CreditCard">
+        <attvalues>
+          <attvalue for="2" value="Maestro" />
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="40" label="Store">
+        <attvalues>
+          <attvalue for="0" value="Walmart" />
+        </attvalues>
+      </node>
+      <node id="43" label="Category">
+        <attvalues>
+          <attvalue for="0" value="Grocery store" />
+        </attvalues>
+      </node>
+      <node id="46" label="Pos">
+        <attvalues>
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="41" label="Store">
+        <attvalues>
+          <attvalue for="0" value="Walgreens" />
+        </attvalues>
+      </node>
+      <node id="44" label="Category">
+        <attvalues>
+          <attvalue for="0" value="Pharmacy" />
+        </attvalues>
+      </node>
+      <node id="47" label="Pos">
+        <attvalues>
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="42" label="Store">
+        <attvalues>
+          <attvalue for="0" value="H&amp;M" />
+        </attvalues>
+      </node>
+      <node id="45" label="Category">
+        <attvalues>
+          <attvalue for="0" value="Clothing store" />
+        </attvalues>
+      </node>
+      <node id="48" label="Pos">
+        <attvalues>
+          <attvalue for="3" value="false" />
+        </attvalues>
+      </node>
+      <node id="49" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="50" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="51" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="52" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="53" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="54" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="55" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="56" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="57" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="58" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="59" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="60" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="61" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="62" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="63" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="64" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="65" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="66" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="67" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="68" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="69" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="70" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="71" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="72" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="73" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="74" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="75" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="76" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="77" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="78" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="79" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="80" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="81" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="82" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="83" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="84" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="85" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="86" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="87" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="88" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="89" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="90" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="91" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="92" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="93" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="94" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="95" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="96" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="97" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="98" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="99" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="100" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="101" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="102" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="103" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="104" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="105" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="106" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="107" label="Transaction">
+        <attvalues>
+          <attvalue for="4" value="false" />
+        </attvalues>
+      </node>
+      <node id="108" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="krystle blas" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="2750" />
+        </attvalues>
+      </node>
+      <node id="109" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="krystle blas" />
+          <attvalue for="6" value="YouTube" />
+          <attvalue for="7" value="6803" />
+        </attvalues>
+      </node>
+      <node id="110" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="krystle blas" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="8799" />
+        </attvalues>
+      </node>
+      <node id="111" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="krystle blas" />
+          <attvalue for="6" value="Instagram" />
+          <attvalue for="7" value="6867" />
+        </attvalues>
+      </node>
+      <node id="112" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="jeri tardy" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="1301" />
+        </attvalues>
+      </node>
+      <node id="113" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="clarinda sappington" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="2873" />
+        </attvalues>
+      </node>
+      <node id="114" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="clarinda sappington" />
+          <attvalue for="6" value="Instagram" />
+          <attvalue for="7" value="8516" />
+        </attvalues>
+      </node>
+      <node id="115" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="clarinda sappington" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="6963" />
+        </attvalues>
+      </node>
+      <node id="116" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="clarinda sappington" />
+          <attvalue for="6" value="Facebook" />
+          <attvalue for="7" value="8385" />
+        </attvalues>
+      </node>
+      <node id="117" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="clarinda sappington" />
+          <attvalue for="6" value="YouTube" />
+          <attvalue for="7" value="7743" />
+        </attvalues>
+      </node>
+      <node id="118" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="jonas parkerson" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="1123" />
+        </attvalues>
+      </node>
+      <node id="119" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="florance yaeger" />
+          <attvalue for="6" value="Facebook" />
+          <attvalue for="7" value="17" />
+        </attvalues>
+      </node>
+      <node id="120" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="florance yaeger" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="4049" />
+        </attvalues>
+      </node>
+      <node id="121" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="carlton casaus" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="4105" />
+        </attvalues>
+      </node>
+      <node id="122" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="carlton casaus" />
+          <attvalue for="6" value="Facebook" />
+          <attvalue for="7" value="3663" />
+        </attvalues>
+      </node>
+      <node id="123" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="carlton casaus" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="3904" />
+        </attvalues>
+      </node>
+      <node id="124" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="carlton casaus" />
+          <attvalue for="6" value="YouTube" />
+          <attvalue for="7" value="7818" />
+        </attvalues>
+      </node>
+      <node id="125" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="nathanial bridgers" />
+          <attvalue for="6" value="Facebook" />
+          <attvalue for="7" value="2889" />
+        </attvalues>
+      </node>
+      <node id="126" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="nathanial bridgers" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="4687" />
+        </attvalues>
+      </node>
+      <node id="127" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="nathanial bridgers" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="6835" />
+        </attvalues>
+      </node>
+      <node id="128" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="nathanial bridgers" />
+          <attvalue for="6" value="YouTube" />
+          <attvalue for="7" value="9496" />
+        </attvalues>
+      </node>
+      <node id="129" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="ivana stmartin" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="4558" />
+        </attvalues>
+      </node>
+      <node id="130" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="ivana stmartin" />
+          <attvalue for="6" value="YouTube" />
+          <attvalue for="7" value="802" />
+        </attvalues>
+      </node>
+      <node id="131" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="ivana stmartin" />
+          <attvalue for="6" value="Instagram" />
+          <attvalue for="7" value="6583" />
+        </attvalues>
+      </node>
+      <node id="132" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="ivana stmartin" />
+          <attvalue for="6" value="Facebook" />
+          <attvalue for="7" value="1365" />
+        </attvalues>
+      </node>
+      <node id="133" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="randal blackshire" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="2222" />
+        </attvalues>
+      </node>
+      <node id="134" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="randal blackshire" />
+          <attvalue for="6" value="Instagram" />
+          <attvalue for="7" value="222" />
+        </attvalues>
+      </node>
+      <node id="135" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="randal blackshire" />
+          <attvalue for="6" value="Facebook" />
+          <attvalue for="7" value="6999" />
+        </attvalues>
+      </node>
+      <node id="136" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="randal blackshire" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="6693" />
+        </attvalues>
+      </node>
+      <node id="137" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="jean mathena" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="9822" />
+        </attvalues>
+      </node>
+      <node id="138" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="vern proto" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="671" />
+        </attvalues>
+      </node>
+      <node id="139" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="vern proto" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="3705" />
+        </attvalues>
+      </node>
+      <node id="140" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="vern proto" />
+          <attvalue for="6" value="Instagram" />
+          <attvalue for="7" value="9113" />
+        </attvalues>
+      </node>
+      <node id="141" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="vern proto" />
+          <attvalue for="6" value="YouTube" />
+          <attvalue for="7" value="6164" />
+        </attvalues>
+      </node>
+      <node id="142" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="rodney yale" />
+          <attvalue for="6" value="Instagram" />
+          <attvalue for="7" value="9111" />
+        </attvalues>
+      </node>
+      <node id="143" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="rodney yale" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="5984" />
+        </attvalues>
+      </node>
+      <node id="144" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="rodney yale" />
+          <attvalue for="6" value="Facebook" />
+          <attvalue for="7" value="916" />
+        </attvalues>
+      </node>
+      <node id="145" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="rodney yale" />
+          <attvalue for="6" value="YouTube" />
+          <attvalue for="7" value="8731" />
+        </attvalues>
+      </node>
+      <node id="146" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="shari damelio" />
+          <attvalue for="6" value="YouTube" />
+          <attvalue for="7" value="2380" />
+        </attvalues>
+      </node>
+      <node id="147" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="shari damelio" />
+          <attvalue for="6" value="Instagram" />
+          <attvalue for="7" value="1207" />
+        </attvalues>
+      </node>
+      <node id="148" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="shari damelio" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="9497" />
+        </attvalues>
+      </node>
+      <node id="149" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="shari damelio" />
+          <attvalue for="6" value="Facebook" />
+          <attvalue for="7" value="3713" />
+        </attvalues>
+      </node>
+      <node id="150" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="shari damelio" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="6451" />
+        </attvalues>
+      </node>
+      <node id="151" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="ozie rowan" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="831" />
+        </attvalues>
+      </node>
+      <node id="152" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="ozie rowan" />
+          <attvalue for="6" value="Instagram" />
+          <attvalue for="7" value="4049" />
+        </attvalues>
+      </node>
+      <node id="153" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="dot brautigam" />
+          <attvalue for="6" value="Facebook" />
+          <attvalue for="7" value="5240" />
+        </attvalues>
+      </node>
+      <node id="154" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="dot brautigam" />
+          <attvalue for="6" value="Twitter" />
+          <attvalue for="7" value="4520" />
+        </attvalues>
+      </node>
+      <node id="155" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="dot brautigam" />
+          <attvalue for="6" value="LinkedIn" />
+          <attvalue for="7" value="7351" />
+        </attvalues>
+      </node>
+      <node id="156" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="dot brautigam" />
+          <attvalue for="6" value="YouTube" />
+          <attvalue for="7" value="1691" />
+        </attvalues>
+      </node>
+      <node id="157" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="dot brautigam" />
+          <attvalue for="6" value="Instagram" />
+          <attvalue for="7" value="639" />
+        </attvalues>
+      </node>
+      <node id="158" label="SocialMedia">
+        <attvalues>
+          <attvalue for="5" value="ileen brungardt" />
+          <attvalue for="6" value="Instagram" />
+          <attvalue for="7" value="4112" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="0" target="20" id="0" type="OWNS" />
+      <edge source="0" target="108" id="1" type="HAS_ACCOUNT" />
+      <edge source="0" target="109" id="2" type="HAS_ACCOUNT" />
+      <edge source="0" target="110" id="3" type="HAS_ACCOUNT" />
+      <edge source="0" target="111" id="4" type="HAS_ACCOUNT" />
+      <edge source="20" target="49" id="5" type="HAS_TRANSACTION" />
+      <edge source="20" target="50" id="6" type="HAS_TRANSACTION" />
+      <edge source="20" target="51" id="7" type="HAS_TRANSACTION" />
+      <edge source="20" target="52" id="8" type="HAS_TRANSACTION" />
+      <edge source="1" target="21" id="9" type="OWNS" />
+      <edge source="1" target="112" id="10" type="HAS_ACCOUNT" />
+      <edge source="21" target="53" id="11" type="HAS_TRANSACTION" />
+      <edge source="21" target="54" id="12" type="HAS_TRANSACTION" />
+      <edge source="21" target="55" id="13" type="HAS_TRANSACTION" />
+      <edge source="21" target="56" id="14" type="HAS_TRANSACTION" />
+      <edge source="21" target="57" id="15" type="HAS_TRANSACTION" />
+      <edge source="2" target="22" id="16" type="OWNS" />
+      <edge source="2" target="113" id="17" type="HAS_ACCOUNT" />
+      <edge source="2" target="114" id="18" type="HAS_ACCOUNT" />
+      <edge source="2" target="115" id="19" type="HAS_ACCOUNT" />
+      <edge source="2" target="116" id="20" type="HAS_ACCOUNT" />
+      <edge source="2" target="117" id="21" type="HAS_ACCOUNT" />
+      <edge source="3" target="23" id="22" type="OWNS" />
+      <edge source="3" target="118" id="23" type="HAS_ACCOUNT" />
+      <edge source="23" target="58" id="24" type="HAS_TRANSACTION" />
+      <edge source="23" target="59" id="25" type="HAS_TRANSACTION" />
+      <edge source="23" target="60" id="26" type="HAS_TRANSACTION" />
+      <edge source="23" target="61" id="27" type="HAS_TRANSACTION" />
+      <edge source="23" target="62" id="28" type="HAS_TRANSACTION" />
+      <edge source="4" target="24" id="29" type="OWNS" />
+      <edge source="4" target="119" id="30" type="HAS_ACCOUNT" />
+      <edge source="4" target="120" id="31" type="HAS_ACCOUNT" />
+      <edge source="24" target="63" id="32" type="HAS_TRANSACTION" />
+      <edge source="24" target="64" id="33" type="HAS_TRANSACTION" />
+      <edge source="5" target="25" id="34" type="OWNS" />
+      <edge source="5" target="121" id="35" type="HAS_ACCOUNT" />
+      <edge source="5" target="122" id="36" type="HAS_ACCOUNT" />
+      <edge source="5" target="123" id="37" type="HAS_ACCOUNT" />
+      <edge source="5" target="124" id="38" type="HAS_ACCOUNT" />
+      <edge source="6" target="26" id="39" type="OWNS" />
+      <edge source="6" target="125" id="40" type="HAS_ACCOUNT" />
+      <edge source="6" target="126" id="41" type="HAS_ACCOUNT" />
+      <edge source="6" target="127" id="42" type="HAS_ACCOUNT" />
+      <edge source="6" target="128" id="43" type="HAS_ACCOUNT" />
+      <edge source="26" target="65" id="44" type="HAS_TRANSACTION" />
+      <edge source="26" target="66" id="45" type="HAS_TRANSACTION" />
+      <edge source="26" target="67" id="46" type="HAS_TRANSACTION" />
+      <edge source="26" target="68" id="47" type="HAS_TRANSACTION" />
+      <edge source="7" target="27" id="48" type="OWNS" />
+      <edge source="7" target="129" id="49" type="HAS_ACCOUNT" />
+      <edge source="7" target="130" id="50" type="HAS_ACCOUNT" />
+      <edge source="7" target="131" id="51" type="HAS_ACCOUNT" />
+      <edge source="7" target="132" id="52" type="HAS_ACCOUNT" />
+      <edge source="27" target="69" id="53" type="HAS_TRANSACTION" />
+      <edge source="27" target="70" id="54" type="HAS_TRANSACTION" />
+      <edge source="8" target="28" id="55" type="OWNS" />
+      <edge source="28" target="71" id="56" type="HAS_TRANSACTION" />
+      <edge source="28" target="72" id="57" type="HAS_TRANSACTION" />
+      <edge source="9" target="29" id="58" type="OWNS" />
+      <edge source="29" target="73" id="59" type="HAS_TRANSACTION" />
+      <edge source="10" target="30" id="60" type="OWNS" />
+      <edge source="10" target="133" id="61" type="HAS_ACCOUNT" />
+      <edge source="10" target="134" id="62" type="HAS_ACCOUNT" />
+      <edge source="10" target="135" id="63" type="HAS_ACCOUNT" />
+      <edge source="10" target="136" id="64" type="HAS_ACCOUNT" />
+      <edge source="30" target="74" id="65" type="HAS_TRANSACTION" />
+      <edge source="30" target="75" id="66" type="HAS_TRANSACTION" />
+      <edge source="30" target="76" id="67" type="HAS_TRANSACTION" />
+      <edge source="30" target="77" id="68" type="HAS_TRANSACTION" />
+      <edge source="11" target="31" id="69" type="OWNS" />
+      <edge source="11" target="137" id="70" type="HAS_ACCOUNT" />
+      <edge source="31" target="78" id="71" type="HAS_TRANSACTION" />
+      <edge source="31" target="79" id="72" type="HAS_TRANSACTION" />
+      <edge source="31" target="80" id="73" type="HAS_TRANSACTION" />
+      <edge source="31" target="81" id="74" type="HAS_TRANSACTION" />
+      <edge source="12" target="32" id="75" type="OWNS" />
+      <edge source="32" target="82" id="76" type="HAS_TRANSACTION" />
+      <edge source="32" target="83" id="77" type="HAS_TRANSACTION" />
+      <edge source="32" target="84" id="78" type="HAS_TRANSACTION" />
+      <edge source="32" target="85" id="79" type="HAS_TRANSACTION" />
+      <edge source="32" target="86" id="80" type="HAS_TRANSACTION" />
+      <edge source="13" target="33" id="81" type="OWNS" />
+      <edge source="13" target="138" id="82" type="HAS_ACCOUNT" />
+      <edge source="13" target="139" id="83" type="HAS_ACCOUNT" />
+      <edge source="13" target="140" id="84" type="HAS_ACCOUNT" />
+      <edge source="13" target="141" id="85" type="HAS_ACCOUNT" />
+      <edge source="33" target="87" id="86" type="HAS_TRANSACTION" />
+      <edge source="33" target="88" id="87" type="HAS_TRANSACTION" />
+      <edge source="14" target="34" id="88" type="OWNS" />
+      <edge source="14" target="142" id="89" type="HAS_ACCOUNT" />
+      <edge source="14" target="143" id="90" type="HAS_ACCOUNT" />
+      <edge source="14" target="144" id="91" type="HAS_ACCOUNT" />
+      <edge source="14" target="145" id="92" type="HAS_ACCOUNT" />
+      <edge source="34" target="89" id="93" type="HAS_TRANSACTION" />
+      <edge source="15" target="35" id="94" type="OWNS" />
+      <edge source="15" target="146" id="95" type="HAS_ACCOUNT" />
+      <edge source="15" target="147" id="96" type="HAS_ACCOUNT" />
+      <edge source="15" target="148" id="97" type="HAS_ACCOUNT" />
+      <edge source="15" target="149" id="98" type="HAS_ACCOUNT" />
+      <edge source="15" target="150" id="99" type="HAS_ACCOUNT" />
+      <edge source="35" target="90" id="100" type="HAS_TRANSACTION" />
+      <edge source="35" target="91" id="101" type="HAS_TRANSACTION" />
+      <edge source="16" target="36" id="102" type="OWNS" />
+      <edge source="36" target="92" id="103" type="HAS_TRANSACTION" />
+      <edge source="36" target="93" id="104" type="HAS_TRANSACTION" />
+      <edge source="36" target="94" id="105" type="HAS_TRANSACTION" />
+      <edge source="36" target="95" id="106" type="HAS_TRANSACTION" />
+      <edge source="36" target="96" id="107" type="HAS_TRANSACTION" />
+      <edge source="17" target="37" id="108" type="OWNS" />
+      <edge source="17" target="151" id="109" type="HAS_ACCOUNT" />
+      <edge source="17" target="152" id="110" type="HAS_ACCOUNT" />
+      <edge source="37" target="97" id="111" type="HAS_TRANSACTION" />
+      <edge source="37" target="98" id="112" type="HAS_TRANSACTION" />
+      <edge source="18" target="38" id="113" type="OWNS" />
+      <edge source="18" target="153" id="114" type="HAS_ACCOUNT" />
+      <edge source="18" target="154" id="115" type="HAS_ACCOUNT" />
+      <edge source="18" target="155" id="116" type="HAS_ACCOUNT" />
+      <edge source="18" target="156" id="117" type="HAS_ACCOUNT" />
+      <edge source="18" target="157" id="118" type="HAS_ACCOUNT" />
+      <edge source="38" target="99" id="119" type="HAS_TRANSACTION" />
+      <edge source="38" target="100" id="120" type="HAS_TRANSACTION" />
+      <edge source="38" target="101" id="121" type="HAS_TRANSACTION" />
+      <edge source="38" target="102" id="122" type="HAS_TRANSACTION" />
+      <edge source="19" target="39" id="123" type="OWNS" />
+      <edge source="19" target="158" id="124" type="HAS_ACCOUNT" />
+      <edge source="39" target="103" id="125" type="HAS_TRANSACTION" />
+      <edge source="39" target="104" id="126" type="HAS_TRANSACTION" />
+      <edge source="39" target="105" id="127" type="HAS_TRANSACTION" />
+      <edge source="39" target="106" id="128" type="HAS_TRANSACTION" />
+      <edge source="39" target="107" id="129" type="HAS_TRANSACTION" />
+      <edge source="40" target="43" id="130" type="IS_PART_OF_CATEGORY" />
+      <edge source="40" target="46" id="131" type="HAS_POS_DEVICE" />
+      <edge source="46" target="76" id="132" type="HAS_TRANSACTION" />
+      <edge source="46" target="82" id="133" type="HAS_TRANSACTION" />
+      <edge source="46" target="85" id="134" type="HAS_TRANSACTION" />
+      <edge source="46" target="94" id="135" type="HAS_TRANSACTION" />
+      <edge source="46" target="98" id="136" type="HAS_TRANSACTION" />
+      <edge source="46" target="102" id="137" type="HAS_TRANSACTION" />
+      <edge source="46" target="104" id="138" type="HAS_TRANSACTION" />
+      <edge source="46" target="107" id="139" type="HAS_TRANSACTION" />
+      <edge source="41" target="44" id="140" type="IS_PART_OF_CATEGORY" />
+      <edge source="41" target="47" id="141" type="HAS_POS_DEVICE" />
+      <edge source="47" target="49" id="142" type="HAS_TRANSACTION" />
+      <edge source="47" target="51" id="143" type="HAS_TRANSACTION" />
+      <edge source="47" target="53" id="144" type="HAS_TRANSACTION" />
+      <edge source="47" target="54" id="145" type="HAS_TRANSACTION" />
+      <edge source="47" target="61" id="146" type="HAS_TRANSACTION" />
+      <edge source="47" target="62" id="147" type="HAS_TRANSACTION" />
+      <edge source="47" target="66" id="148" type="HAS_TRANSACTION" />
+      <edge source="47" target="67" id="149" type="HAS_TRANSACTION" />
+      <edge source="47" target="72" id="150" type="HAS_TRANSACTION" />
+      <edge source="47" target="75" id="151" type="HAS_TRANSACTION" />
+      <edge source="47" target="77" id="152" type="HAS_TRANSACTION" />
+      <edge source="47" target="81" id="153" type="HAS_TRANSACTION" />
+      <edge source="47" target="88" id="154" type="HAS_TRANSACTION" />
+      <edge source="47" target="89" id="155" type="HAS_TRANSACTION" />
+      <edge source="47" target="91" id="156" type="HAS_TRANSACTION" />
+      <edge source="47" target="92" id="157" type="HAS_TRANSACTION" />
+      <edge source="47" target="95" id="158" type="HAS_TRANSACTION" />
+      <edge source="47" target="99" id="159" type="HAS_TRANSACTION" />
+      <edge source="47" target="100" id="160" type="HAS_TRANSACTION" />
+      <edge source="47" target="105" id="161" type="HAS_TRANSACTION" />
+      <edge source="42" target="45" id="162" type="IS_PART_OF_CATEGORY" />
+      <edge source="42" target="48" id="163" type="HAS_POS_DEVICE" />
+      <edge source="48" target="52" id="164" type="HAS_TRANSACTION" />
+      <edge source="48" target="55" id="165" type="HAS_TRANSACTION" />
+      <edge source="48" target="57" id="166" type="HAS_TRANSACTION" />
+      <edge source="48" target="58" id="167" type="HAS_TRANSACTION" />
+      <edge source="48" target="60" id="168" type="HAS_TRANSACTION" />
+      <edge source="48" target="63" id="169" type="HAS_TRANSACTION" />
+      <edge source="48" target="64" id="170" type="HAS_TRANSACTION" />
+      <edge source="48" target="69" id="171" type="HAS_TRANSACTION" />
+      <edge source="48" target="70" id="172" type="HAS_TRANSACTION" />
+      <edge source="48" target="71" id="173" type="HAS_TRANSACTION" />
+      <edge source="48" target="73" id="174" type="HAS_TRANSACTION" />
+      <edge source="48" target="78" id="175" type="HAS_TRANSACTION" />
+      <edge source="48" target="80" id="176" type="HAS_TRANSACTION" />
+      <edge source="48" target="84" id="177" type="HAS_TRANSACTION" />
+      <edge source="48" target="86" id="178" type="HAS_TRANSACTION" />
+      <edge source="48" target="97" id="179" type="HAS_TRANSACTION" />
+      <edge source="48" target="101" id="180" type="HAS_TRANSACTION" />
+      <edge source="48" target="106" id="181" type="HAS_TRANSACTION" />
+      <edge source="49" target="50" id="182" type="HAS_TRANSACTION" />
+      <edge source="49" target="56" id="183" type="HAS_TRANSACTION" />
+      <edge source="49" target="59" id="184" type="HAS_TRANSACTION" />
+      <edge source="49" target="65" id="185" type="HAS_TRANSACTION" />
+      <edge source="49" target="68" id="186" type="HAS_TRANSACTION" />
+      <edge source="49" target="74" id="187" type="HAS_TRANSACTION" />
+      <edge source="49" target="79" id="188" type="HAS_TRANSACTION" />
+      <edge source="49" target="83" id="189" type="HAS_TRANSACTION" />
+      <edge source="49" target="87" id="190" type="HAS_TRANSACTION" />
+      <edge source="49" target="90" id="191" type="HAS_TRANSACTION" />
+      <edge source="49" target="93" id="192" type="HAS_TRANSACTION" />
+      <edge source="49" target="96" id="193" type="HAS_TRANSACTION" />
+      <edge source="49" target="103" id="194" type="HAS_TRANSACTION" />
+    </edges>
+  </graph>
+</gexf>

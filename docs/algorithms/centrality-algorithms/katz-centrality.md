@@ -18,7 +18,7 @@ katz_centrality(G, alpha=0.1, beta=1.0, max_iter=1000, tol=1e-06, nstart=None, n
 
 ### Example
 
-First save locally [`graph.gexf`](https://public-assets.memgraph.com/networkx-resources/graph.gexf) to run the below example.
+First save locally [`graph.gexf`](https://raw.githubusercontent.com/memgraph/networkx-guide/main/static/data/graph.gexf) to run the below example.
 
 <Tabs
   groupId="bc"

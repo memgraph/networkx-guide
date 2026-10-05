@@ -19,7 +19,7 @@ degree_centrality(G)
 
 ### Example
 
-First save locally [`graph.gexf`](https://public-assets.memgraph.com/networkx-resources/graph.gexf) to run the below example.
+First save locally [`graph.gexf`](https://raw.githubusercontent.com/memgraph/networkx-guide/main/static/data/graph.gexf) to run the below example.
 
 <Tabs
   groupId="bc"
